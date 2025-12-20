@@ -39,32 +39,42 @@ const App: React.FC = () => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  if (isVerified === null) return null;
+  if (isVerified === null) {
+    return (
+      <div className="min-h-screen flex flex-col font-sans bg-premium-dark selection:bg-premium-purple selection:text-white relative">
+        <AgeGate onVerify={handleVerify} onReject={handleReject} />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-premium-dark selection:bg-premium-purple selection:text-white relative">
-      {!isVerified && <AgeGate onVerify={handleVerify} onReject={handleReject} />}
-      
-      {/* Background Vapor Effects */}
-      <SmokeEffect />
-      
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <Navbar />
-        
-        <main className="flex-grow pt-20">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/policies" element={<Policies />} />
-          </Routes>
-        </main>
+      {isVerified === false ? (
+        <AgeGate onVerify={handleVerify} onReject={handleReject} />
+      ) : (
+        <>
+          {/* Background Vapor Effects */}
+          <SmokeEffect />
+          
+          <div className="relative z-10 flex flex-col min-h-screen">
+            <Navbar />
+            
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/shop" element={<Shop />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/policies" element={<Policies />} />
+              </Routes>
+            </main>
 
-        <Footer />
-        <ChatBubble />
-      </div>
+            <Footer />
+            <ChatBubble />
+          </div>
+        </>
+      )}
     </div>
   );
 };
