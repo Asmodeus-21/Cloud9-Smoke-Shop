@@ -1,9 +1,6 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://cloud9ukiah.com/sitemap.xml
-
 # Disallow admin or sensitive paths (if any)
 # User-agent: *
 # Disallow: /admin/

@@ -50,6 +50,7 @@ The application requires the following environment variable:
    - Go to your project settings
    - Navigate to "Environment Variables"
    - Add `GEMINI_API_KEY` with your API key
+   - **Important**: If using `vercel.json` with secret syntax `@gemini_api_key`, create a secret first using `vercel secrets add gemini_api_key your-key`, or simply set `GEMINI_API_KEY` as a regular environment variable in the dashboard
 
 4. Redeploy for changes to take effect
 
