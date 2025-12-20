@@ -2,27 +2,20 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 const SmokeEffect: React.FC = () => {
-  const [wisps, setWisps] = useState<{ id: number; x: number; y: number; size: number; duration: number; delay: number }[]>([]);
-  const cursorRef = useRef({ x: 0, y: 0 });
+  const [wisps, setWisps] = useState<{ id: number; x: number; y: number; size: number; duration: number; delay: number; opacity: number }[]>([]);
 
   useEffect(() => {
-    // Generate initial wisps
-    const initialWisps = Array.from({ length: 8 }).map((_, i) => ({
+    // Generate thick, luxurious vapor clouds with a subtle pink tint
+    const initialWisps = Array.from({ length: 14 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: 200 + Math.random() * 300,
-      duration: 15 + Math.random() * 20,
-      delay: Math.random() * 10
+      size: 450 + Math.random() * 450, 
+      duration: 18 + Math.random() * 22,
+      delay: Math.random() * -25,
+      opacity: 0.12 + Math.random() * 0.18
     }));
     setWisps(initialWisps);
-
-    const handleMouseMove = (e: MouseEvent) => {
-      cursorRef.current = { x: e.clientX, y: e.clientY };
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   return (
@@ -37,25 +30,27 @@ const SmokeEffect: React.FC = () => {
             height: `${wisp.size}px`,
             animationDuration: `${wisp.duration}s`,
             animationDelay: `${wisp.delay}s`,
+            opacity: wisp.opacity,
+            background: 'radial-gradient(circle, rgba(255,255,255,0.25) 0%, rgba(236, 72, 153, 0.1) 40%, transparent 80%)',
+            filter: 'blur(70px)'
           }}
         />
       ))}
-      {/* Dynamic Cursor Wisp */}
-      <CursorWisp />
+      <InteractiveVapor />
     </div>
   );
 };
 
-const CursorWisp: React.FC = () => {
+const InteractiveVapor: React.FC = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
-  const scrollPos = useRef(0);
+  const [scrollVapor, setScrollVapor] = useState(0);
 
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {
       setPos({ x: e.clientX, y: e.clientY });
     };
     const handleScroll = () => {
-      scrollPos.current = window.scrollY;
+      setScrollVapor(window.scrollY * 0.12);
     };
     window.addEventListener('mousemove', handleMove);
     window.addEventListener('scroll', handleScroll);
@@ -66,15 +61,30 @@ const CursorWisp: React.FC = () => {
   }, []);
 
   return (
-    <div 
-      className="fixed w-96 h-96 rounded-full opacity-10 blur-[100px] pointer-events-none transition-all duration-700 ease-out"
-      style={{
-        background: 'radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, transparent 70%)',
-        left: pos.x - 192,
-        top: pos.y - 192,
-        zIndex: 2
-      }}
-    />
+    <>
+      {/* Cursor Glow - Pink Tinted */}
+      <div 
+        className="fixed rounded-full pointer-events-none transition-all duration-700 ease-out"
+        style={{
+          width: '700px',
+          height: '700px',
+          background: 'radial-gradient(circle, rgba(236, 72, 153, 0.18) 0%, transparent 70%)',
+          left: pos.x - 350,
+          top: pos.y - 350,
+          filter: 'blur(90px)',
+          zIndex: 2
+        }}
+      />
+      {/* Scroll-based atmospheric lift */}
+      <div 
+        className="fixed inset-0 pointer-events-none transition-transform duration-1000 ease-out opacity-25"
+        style={{
+          transform: `translateY(${-scrollVapor}px)`,
+          background: 'linear-gradient(to bottom, transparent, rgba(236, 72, 153, 0.05), transparent)',
+          zIndex: 1
+        }}
+      />
+    </>
   );
 };
 

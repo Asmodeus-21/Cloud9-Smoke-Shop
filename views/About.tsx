@@ -6,13 +6,13 @@ const About: React.FC = () => {
   return (
     <div className="pb-32">
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-premium-purple/20 to-premium-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-premium-purple/30 to-premium-dark z-10"></div>
         <img 
-          src="https://picsum.photos/seed/store/1920/1080" 
-          className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay"
-          alt="Cloud9 Store Interior"
+          src="https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=1920&auto=format&fit=crop" 
+          className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale"
+          alt="Cloud9 Atmosphere"
         />
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-20 text-center px-6">
           <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter">Our Story</h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Locally owned, community focused, and dedicated to the premium experience.
@@ -47,13 +47,14 @@ const About: React.FC = () => {
             </div>
             
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-premium-purple to-premium-pink blur-2xl opacity-20"></div>
-              <div className="glass p-4 rounded-[2.5rem] relative z-10 border-white/10">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-premium-purple to-premium-pink blur-3xl opacity-20"></div>
+              <div className="glass p-4 rounded-[3rem] relative z-10 border-white/10 overflow-hidden">
                 <img 
-                  src="https://picsum.photos/seed/crew/800/1000" 
-                  className="rounded-[2rem] w-full object-cover aspect-[4/5]"
-                  alt="The Cloud9 Experience"
+                  src="https://images.unsplash.com/photo-1550418406-930438138982?q=80&w=800&h=1000&auto=format&fit=crop" 
+                  className="rounded-[2.5rem] w-full object-cover aspect-[4/5] transform hover:scale-105 transition-transform duration-700"
+                  alt="Premium Hardware Close-up"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
               </div>
             </div>
           </div>
@@ -71,10 +72,11 @@ const About: React.FC = () => {
              {[
                { title: "Locally Owned", desc: "A true California business invested in the Ukiah community." },
                { title: "Premium Brands", desc: "Only the biggest names like Geek Bar, Lost Mary, and more." },
-               { title: "Friendly Staff", desc: "Knowledgeable experts who prioritize your satisfaction." },
-               { title: "Authentic Products", desc: "Every item we sell is verified genuine with zero clones." }
+               { title: "Expert Service", desc: "Passionate guides who prioritize your satisfaction and safety." },
+               { title: "Authentic Products", desc: "Every item we sell is verified genuine with zero tolerance for clones." }
              ].map((val, i) => (
-               <div key={i} className="glass p-10 rounded-3xl border-white/5 hover:border-premium-purple/20 transition-all text-center">
+               <div key={i} className="glass p-10 rounded-3xl border-white/5 hover:border-premium-purple/20 transition-all text-center group">
+                 <div className="w-12 h-1 bg-premium-purple mb-6 mx-auto group-hover:w-20 transition-all"></div>
                  <h3 className="text-xl font-bold mb-4 text-white">{val.title}</h3>
                  <p className="text-gray-400 text-sm leading-relaxed">{val.desc}</p>
                </div>
