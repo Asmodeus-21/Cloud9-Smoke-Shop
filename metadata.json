@@ -1,0 +1,8 @@
+{
+  "name": "Cloud9 Smoke Shop - Premium Vape & Smoke Destination",
+  "description": "A modern, luxurious, and colorful website for Cloud9 Smoke Shop in Ukiah, California. Features a sleek Apple-inspired design with neon gradients, age verification, and high-end retail aesthetics.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
