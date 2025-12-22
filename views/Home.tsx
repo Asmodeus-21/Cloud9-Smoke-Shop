@@ -5,11 +5,11 @@ import { PRODUCTS } from '../constants';
 import ProductCard from '../components/ProductCard';
 
 const CATEGORY_ITEMS = [
-  { name: 'Vape Devices', image: 'https://images.unsplash.com/photo-1550418290-a8d86ad674a6?q=80&w=600&h=800&auto=format&fit=crop' },
-  { name: 'E-Liquids', image: 'https://images.unsplash.com/photo-1594918715878-1b2d7f87a8e7?q=80&w=600&h=800&auto=format&fit=crop' },
-  { name: 'Disposables', image: 'https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=600&h=800&auto=format&fit=crop' },
-  { name: 'Glassware', image: 'https://images.unsplash.com/photo-1610444697397-6c8411b43521?q=80&w=600&h=800&auto=format&fit=crop' },
-  { name: 'Accessories', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600&h=800&auto=format&fit=crop' },
+  { name: 'Vape Devices', image: '/categories/vape-devices.svg' },
+  { name: 'E-Liquids', image: '/categories/e-liquids.svg' },
+  { name: 'Disposables', image: '/categories/disposables.svg' },
+  { name: 'Glassware', image: '/categories/glassware.svg' },
+  { name: 'Accessories', image: '/categories/accessories.svg' },
 ];
 
 const VaporCloudLayer = () => {

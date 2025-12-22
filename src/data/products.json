@@ -1,408 +1,391 @@
 {
   "products": [
     {
-      "id": "puffco-peak",
-      "name": "Puffco Peak",
+      "id": "puffco-plus",
+      "name": "Puffco Plus Pen",
       "category": "Devices & Vape",
-      "price": 299.99,
-      "description": "Premium dab device with innovative heating technology",
-      "image": "puffco-peak.jpg",
+      "price": 79.99,
+      "description": "Portable dab pen with precision temperature control",
+      "image": "puffco-plus-pen.jpeg",
       "featured": true
     },
     {
-      "id": "puffco-peak-pro",
-      "name": "Puffco Peak Pro",
+      "id": "geekvape-aegis",
+      "name": "GeekVape Aegis Legend",
       "category": "Devices & Vape",
-      "price": 0,
-      "description": "Advanced dab device with enhanced features",
-      "image": "puffco-peak-pro.jpg",
+      "price": 89.99,
+      "description": "Rugged and powerful dual-battery mod",
+      "image": "geekvape-aegis-legend.jpg"
+    },
+    {
+      "id": "juul-starter",
+      "name": "JUUL Starter Kit",
+      "category": "Devices & Vape",
+      "price": 49.99,
+      "description": "Sleek pod-based vaping system",
+      "image": "juul-starter-kit.png"
+    },
+    {
+      "id": "lost-vape-orion",
+      "name": "Lost Vape Orion DNA",
+      "category": "Devices & Vape",
+      "price": 99.99,
+      "description": "Advanced chipset with premium build quality",
+      "image": "lost-vape-orion-dna.jpg"
+    },
+    {
+      "id": "smok-nord",
+      "name": "SMOK Nord 4 Kit",
+      "category": "Devices & Vape",
+      "price": 59.99,
+      "description": "Versatile pod system with multiple coil options",
+      "image": "smok-nord-4-kit.jpg"
+    },
+    {
+      "id": "uwell-caliburn",
+      "name": "Uwell Caliburn G2",
+      "category": "Devices & Vape",
+      "price": 44.99,
+      "description": "Compact pod vape with excellent flavor",
+      "image": "uwell-caliburn-g2.webp"
+    },
+    {
+      "id": "vaporesso-xros",
+      "name": "Vaporesso XROS 3",
+      "category": "Devices & Vape",
+      "price": 54.99,
+      "description": "Innovative pod system with OLED display",
+      "image": "vaporesso-xros-3.png"
+    },
+    {
+      "id": "voopoo-drag",
+      "name": "VooPoo Drag X",
+      "category": "Devices & Vape",
+      "price": 69.99,
+      "description": "Powerful dual-battery mod with fast firing",
+      "image": "voopoo-drag-x.jpeg"
+    },
+    {
+      "id": "vuse-alto",
+      "name": "Vuse Alto Kit",
+      "category": "Devices & Vape",
+      "price": 34.99,
+      "description": "Simple and reliable pod system",
+      "image": "vuse-alto-kit.jpg"
+    },
+    {
+      "id": "elf-bar",
+      "name": "Elf Bar BC5000",
+      "category": "Devices & Vape",
+      "price": 9.99,
+      "description": "Disposable vape with 5000 puffs",
+      "image": "elf-bar-bc5000.png"
+    },
+    {
+      "id": "straight-tube-bong",
+      "name": "Straight Tube Bong",
+      "category": "Glass",
+      "price": 129.99,
+      "description": "Classic glass water pipe with 8mm thickness",
+      "image": "straight-tube-bong.jpg",
       "featured": true
     },
     {
-      "id": "510-batteries",
-      "name": "510 Batteries",
-      "category": "Devices & Vape",
-      "price": 0,
-      "description": "Compatible batteries for vape devices",
-      "image": "510-batteries.jpg"
+      "id": "spoon-pipe",
+      "name": "Spoon Pipe - Colored",
+      "category": "Glass",
+      "price": 24.99,
+      "description": "Hand-blown glass spoon pipe in assorted colors",
+      "image": "spoon-pipe-color.jpg"
     },
     {
-      "id": "vape-accessories",
-      "name": "Vape Accessories",
-      "category": "Devices & Vape",
-      "price": 0,
-      "description": "Essential vape device accessories",
-      "image": "vape-accessories.jpg"
+      "id": "sherlock-pipe",
+      "name": "Sherlock Pipe Glass",
+      "category": "Glass",
+      "price": 34.99,
+      "description": "Classic Sherlock design in hand-blown glass",
+      "image": "sherlock-pipe-glass.webp"
+    },
+    {
+      "id": "glass-bubbler",
+      "name": "Glass Bubbler Pipe",
+      "category": "Glass",
+      "price": 44.99,
+      "description": "Water-filtered portable smoking device",
+      "image": "glass-bubbler-pipe.webp"
+    },
+    {
+      "id": "gravity-bong",
+      "name": "Gravity Bong Glass",
+      "category": "Glass",
+      "price": 89.99,
+      "description": "High-capacity gravity-fed bong system",
+      "image": "gravity-bong-glass.webp"
+    },
+    {
+      "id": "ash-catcher",
+      "name": "Ash Catcher 14mm",
+      "category": "Glass",
+      "price": 19.99,
+      "description": "Protective ash-catching water filter",
+      "image": "ash-catcher-14mm.jpeg"
+    },
+    {
+      "id": "glass-downstem",
+      "name": "Glass Downstem",
+      "category": "Glass",
+      "price": 14.99,
+      "description": "Replacement borosilicate glass downstem",
+      "image": "glass-downstem.jpeg"
+    },
+    {
+      "id": "dab-rig-mini",
+      "name": "Mini Dab Rig",
+      "category": "Dab & Concentrate",
+      "price": 74.99,
+      "description": "Compact glass dab rig perfect for concentrates",
+      "image": "dab-rig-mini.jpeg",
+      "featured": true
+    },
+    {
+      "id": "quartz-banger",
+      "name": "Quartz Banger 14mm",
+      "category": "Dab & Concentrate",
+      "price": 29.99,
+      "description": "High-quality quartz nail for dab rigs",
+      "image": "quartz-banger-14mm.webp"
+    },
+    {
+      "id": "dab-tool",
+      "name": "Dab Tool Stainless",
+      "category": "Dab & Concentrate",
+      "price": 9.99,
+      "description": "Stainless steel dab tool for handling concentrates",
+      "image": "dab-tool-stainless.jpeg"
+    },
+    {
+      "id": "carb-cap",
+      "name": "Carb Cap Glass",
+      "category": "Dab & Concentrate",
+      "price": 14.99,
+      "description": "Glass carb cap for improved dab efficiency",
+      "image": "carb-cap-glass.jpeg"
+    },
+    {
+      "id": "nectar-collector",
+      "name": "Nectar Collector Kit",
+      "category": "Dab & Concentrate",
+      "price": 39.99,
+      "description": "Complete nectar collector setup with titanium tip",
+      "image": "nectar-collector-kit.jpeg"
+    },
+    {
+      "id": "silicone-container",
+      "name": "Silicone Wax Container",
+      "category": "Dab & Concentrate",
+      "price": 4.99,
+      "description": "Non-stick silicone container for concentrates",
+      "image": "silicone-wax-container.jpeg"
+    },
+    {
+      "id": "raw-papers",
+      "name": "RAW Classic Papers",
+      "category": "Rolling",
+      "price": 2.99,
+      "description": "Classic unbleached rolling papers",
+      "image": "raw-classic-papers.jpg"
+    },
+    {
+      "id": "raw-cones",
+      "name": "RAW Cones Classic",
+      "category": "Rolling",
+      "price": 3.99,
+      "description": "Pre-rolled cone papers ready to fill",
+      "image": "raw-cones-classic.jpg"
+    },
+    {
+      "id": "ocb-premium",
+      "name": "OCB Premium Black",
+      "category": "Rolling",
+      "price": 2.49,
+      "description": "Premium quality black rolling papers",
+      "image": "ocb-premium-black.jpg"
+    },
+    {
+      "id": "zig-zag",
+      "name": "Zig-Zag Orange",
+      "category": "Rolling",
+      "price": 1.99,
+      "description": "Classic Zig-Zag orange rolling papers",
+      "image": "zig-zag-orange.jpeg"
+    },
+    {
+      "id": "backwoods-honey",
+      "name": "Backwoods Honey Berry",
+      "category": "Rolling",
+      "price": 1.49,
+      "description": "Flavored tobacco leaf wraps",
+      "image": "backwoods-honey-berry.jpeg"
+    },
+    {
+      "id": "santa-cruz-shredder",
+      "name": "Santa Cruz Shredder",
+      "category": "Rolling",
+      "price": 49.99,
+      "description": "Premium 4-piece herb grinder",
+      "image": "santa-cruz-shredder.jpg"
+    },
+    {
+      "id": "raw-tray",
+      "name": "RAW Rolling Tray",
+      "category": "Rolling",
+      "price": 7.99,
+      "description": "Official RAW brand rolling surface",
+      "image": "raw-rolling-tray.jpg"
+    },
+    {
+      "id": "clipper-lighter",
+      "name": "Clipper Lighter Solid",
+      "category": "Accessories",
+      "price": 3.99,
+      "description": "Refillable gas lighter with flint wheel",
+      "image": "clipper-lighter-solid.jpeg"
+    },
+    {
+      "id": "510-battery",
+      "name": "510 Stick Battery",
+      "category": "Accessories",
+      "price": 12.99,
+      "description": "Variable voltage 510 cartridge battery",
+      "image": "510-stick-battery.jpg"
+    },
+    {
+      "id": "18650-battery",
+      "name": "Battery 18650 Sony",
+      "category": "Accessories",
+      "price": 7.99,
+      "description": "High-capacity Sony 18650 lithium battery",
+      "image": "battery-18650-sony.jpeg"
+    },
+    {
+      "id": "nitecore-charger",
+      "name": "Nitecore Charger i2",
+      "category": "Accessories",
+      "price": 29.99,
+      "description": "Intelligent dual-slot battery charger",
+      "image": "nitecore-charger-i2.jpg"
+    },
+    {
+      "id": "cotton-bacon",
+      "name": "Cotton Bacon Prime",
+      "category": "Accessories",
+      "price": 4.99,
+      "description": "Premium organic cotton for rebuilding",
+      "image": "cotton-bacon-prime.jpg"
+    },
+    {
+      "id": "smok-rpm-coils",
+      "name": "SMOK RPM Coils",
+      "category": "Accessories",
+      "price": 11.99,
+      "description": "Replacement coils for SMOK RPM pods",
+      "image": "smok-rpm-coils.jpeg"
+    },
+    {
+      "id": "resin-drip-tip",
+      "name": "Resin Drip Tip 810",
+      "category": "Accessories",
+      "price": 8.99,
+      "description": "Decorative resin drip tip for vapes",
+      "image": "resin-drip-tip-810.jpeg"
+    },
+    {
+      "id": "raw-hat",
+      "name": "RAW Snapback Hat",
+      "category": "Lifestyle & Storage",
+      "price": 19.99,
+      "description": "Official RAW branded snapback cap",
+      "image": "raw-snapback-hat.jpeg"
+    },
+    {
+      "id": "smell-proof-backpack",
+      "name": "Smell-Proof Backpack",
+      "category": "Lifestyle & Storage",
+      "price": 79.99,
+      "description": "Odor-resistant storage backpack with locking zippers",
+      "image": "smell-proof-backpack.jpeg"
+    },
+    {
+      "id": "vape-mat",
+      "name": "Vape Mat Pad",
+      "category": "Lifestyle & Storage",
+      "price": 12.99,
+      "description": "Non-slip work surface for vaping setup",
+      "image": "vape-mat-pad.jpeg"
+    },
+    {
+      "id": "detoxify-clean",
+      "name": "Detoxify Ready Clean",
+      "category": "Fresheners & Detox",
+      "price": 34.99,
+      "description": "Fast-acting detox drink for testing",
+      "image": "detoxify-ready-clean.jpeg"
+    },
+    {
+      "id": "ozium-spray",
+      "name": "Ozium Spray Original",
+      "category": "Fresheners & Detox",
+      "price": 6.99,
+      "description": "Odor-eliminating aerosol spray",
+      "image": "ozium-spray-original.jpg"
     },
     {
       "id": "smoke-buddy",
-      "name": "Smoke Buddy",
-      "category": "Devices & Vape",
-      "price": 0,
+      "name": "Smoke Buddy Original",
+      "category": "Fresheners & Detox",
+      "price": 19.99,
       "description": "Personal smoke filter device",
-      "image": "smoke-buddy.jpg"
+      "image": "smoke-buddy-original.jpg"
     },
     {
-      "id": "torches",
-      "name": "Torches",
-      "category": "Devices & Vape",
-      "price": 0,
-      "description": "Precision torches for concentrates",
-      "image": "torches.jpg"
-    },
-    {
-      "id": "butane",
-      "name": "Butane",
-      "category": "Devices & Vape",
-      "price": 0,
-      "description": "Premium butane fuel",
-      "image": "butane.jpg"
-    },
-    {
-      "id": "bongs",
-      "name": "Bongs",
-      "category": "Glass",
-      "price": 0,
-      "description": "Hand-crafted glass water pipes",
-      "image": "bongs.jpg",
-      "featured": true
-    },
-    {
-      "id": "bubblers",
-      "name": "Bubblers",
-      "category": "Glass",
-      "price": 0,
-      "description": "Portable water filtration devices",
-      "image": "bubblers.jpg"
-    },
-    {
-      "id": "pipes",
-      "name": "Pipes",
-      "category": "Glass",
-      "price": 0,
-      "description": "Classic glass smoking pipes",
-      "image": "pipes.jpg"
-    },
-    {
-      "id": "bowls",
-      "name": "Bowls",
-      "category": "Glass",
-      "price": 0,
-      "description": "Replacement glass bowls",
-      "image": "bowls.jpg"
-    },
-    {
-      "id": "ashtrays",
-      "name": "Ashtrays",
-      "category": "Glass",
-      "price": 0,
-      "description": "Glass and ceramic ashtrays",
-      "image": "ashtrays.jpg"
-    },
-    {
-      "id": "bong-case",
-      "name": "Bong Case",
-      "category": "Glass",
-      "price": 0,
-      "description": "Protective carrying case for bongs",
-      "image": "bong-case.jpg"
-    },
-    {
-      "id": "cookies-glass",
-      "name": "Cookies Glass",
-      "category": "Glass",
-      "price": 0,
-      "description": "Premium branded glass collection",
-      "image": "cookies-glass.jpg"
-    },
-    {
-      "id": "dab-rigs",
-      "name": "Dab Rigs",
-      "category": "Dab & Concentrate",
-      "price": 0,
-      "description": "Professional dab rig setups",
-      "image": "dab-rigs.jpg",
-      "featured": true
-    },
-    {
-      "id": "dab-accessories",
-      "name": "Dab Accessories",
-      "category": "Dab & Concentrate",
-      "price": 0,
-      "description": "Tools and accessories for dab use",
-      "image": "dab-accessories.jpg"
-    },
-    {
-      "id": "terp-slurpers",
-      "name": "Terp Slurpers",
-      "category": "Dab & Concentrate",
-      "price": 0,
-      "description": "Advanced terp slurper nails",
-      "image": "terp-slurpers.jpg"
-    },
-    {
-      "id": "nectar-collectors",
-      "name": "Nectar Collectors",
-      "category": "Dab & Concentrate",
-      "price": 0,
-      "description": "Portable concentrate extraction tools",
-      "image": "nectar-collectors.jpg"
-    },
-    {
-      "id": "buckets",
-      "name": "Buckets",
-      "category": "Dab & Concentrate",
-      "price": 0,
-      "description": "Replacement buckets for dab nails",
-      "image": "buckets.jpg"
-    },
-    {
-      "id": "raw-rolling-papers",
-      "name": "RAW Rolling Papers",
-      "category": "Rolling",
-      "price": 0,
-      "description": "Classic unbleached rolling papers",
-      "image": "raw-rolling-papers.jpg"
-    },
-    {
-      "id": "rolling-papers",
-      "name": "Rolling Papers",
-      "category": "Rolling",
-      "price": 0,
-      "description": "Premium rolling paper selection",
-      "image": "rolling-papers.jpg"
-    },
-    {
-      "id": "hemp-wraps",
-      "name": "Hemp Wraps",
-      "category": "Rolling",
-      "price": 0,
-      "description": "Natural hemp leaf wraps",
-      "image": "hemp-wraps.jpg"
-    },
-    {
-      "id": "king-palm",
-      "name": "King Palm",
-      "category": "Rolling",
-      "price": 0,
-      "description": "Premium palm leaf wraps",
-      "image": "king-palm.jpg"
-    },
-    {
-      "id": "backwoods",
-      "name": "Backwoods",
-      "category": "Rolling",
-      "price": 0,
-      "description": "Classic tobacco leaf wraps",
-      "image": "backwoods.jpg"
-    },
-    {
-      "id": "looseleaf",
-      "name": "Looseleaf",
-      "category": "Rolling",
-      "price": 0,
-      "description": "Looseleaf wrap products",
-      "image": "looseleaf.jpg"
-    },
-    {
-      "id": "grabba-leaf",
-      "name": "Grabba Leaf",
-      "category": "Rolling",
-      "price": 0,
-      "description": "Premium grabba leaf",
-      "image": "grabba-leaf.jpg"
-    },
-    {
-      "id": "grinders",
-      "name": "Grinders",
-      "category": "Accessories",
-      "price": 0,
-      "description": "Premium herb grinders",
-      "image": "grinders.jpg"
-    },
-    {
-      "id": "rolling-trays",
-      "name": "Rolling Trays",
-      "category": "Accessories",
-      "price": 0,
-      "description": "Rolling trays and work surfaces",
-      "image": "rolling-trays.jpg"
-    },
-    {
-      "id": "lighters",
-      "name": "Lighters",
-      "category": "Accessories",
-      "price": 0,
-      "description": "Quality lighters and ignition tools",
-      "image": "lighters.jpg"
-    },
-    {
-      "id": "scales",
-      "name": "Scales",
-      "category": "Accessories",
-      "price": 0,
-      "description": "Precision digital scales",
-      "image": "scales.jpg"
-    },
-    {
-      "id": "glass-cleaners",
-      "name": "Glass Cleaners",
-      "category": "Accessories",
-      "price": 0,
-      "description": "Specialized glass cleaning solutions",
-      "image": "glass-cleaners.jpg"
-    },
-    {
-      "id": "backpacks",
-      "name": "Backpacks",
-      "category": "Lifestyle & Storage",
-      "price": 0,
-      "description": "Durable carry backpacks",
-      "image": "backpacks.jpg"
-    },
-    {
-      "id": "smell-proof-backpacks",
-      "name": "Smell-Proof Backpacks",
-      "category": "Lifestyle & Storage",
-      "price": 0,
-      "description": "Odor-resistant storage backpacks",
-      "image": "smell-proof-backpacks.jpg"
-    },
-    {
-      "id": "pouches",
-      "name": "Pouches",
-      "category": "Lifestyle & Storage",
-      "price": 0,
-      "description": "Compact storage pouches",
-      "image": "pouches.jpg"
-    },
-    {
-      "id": "mylar-bags",
-      "name": "Mylar Bags",
-      "category": "Lifestyle & Storage",
-      "price": 0,
-      "description": "Resealable mylar storage bags",
-      "image": "mylar-bags.jpg"
-    },
-    {
-      "id": "jewelry",
-      "name": "Jewelry",
-      "category": "Lifestyle & Storage",
-      "price": 0,
-      "description": "Lifestyle jewelry collection",
-      "image": "jewelry.jpg"
-    },
-    {
-      "id": "posters",
-      "name": "Posters",
-      "category": "Lifestyle & Storage",
-      "price": 0,
-      "description": "Premium poster collection",
-      "image": "posters.jpg"
-    },
-    {
-      "id": "air-fresheners",
-      "name": "Air Fresheners",
+      "id": "odor-candle",
+      "name": "Odor Candle Hippie",
       "category": "Fresheners & Detox",
-      "price": 0,
-      "description": "Premium air freshening products",
-      "image": "air-fresheners.jpg"
+      "price": 11.99,
+      "description": "Scented candle to mask odors",
+      "image": "odor-candle-hippie.jpeg"
     },
     {
-      "id": "candles",
-      "name": "Candles",
-      "category": "Fresheners & Detox",
-      "price": 0,
-      "description": "Scented candles",
-      "image": "candles.jpg"
-    },
-    {
-      "id": "detox-drinks",
-      "name": "Detox Drinks",
-      "category": "Fresheners & Detox",
-      "price": 0,
-      "description": "Detoxification beverage products",
-      "image": "detox-drinks.jpg"
-    },
-    {
-      "id": "pouch-tobacco",
-      "name": "Pouch Tobacco",
+      "id": "captain-black",
+      "name": "Captain Black Pouch",
       "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Tobacco pouch products",
-      "image": "pouch-tobacco.jpg"
+      "price": 6.99,
+      "description": "Premium loose tobacco pouch",
+      "image": "captain-black-pouch.jpeg"
     },
     {
-      "id": "swisher-sweets",
-      "name": "Swisher Sweets",
+      "id": "cigar-cutter",
+      "name": "Cigar Cutter Guillotine",
       "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Swisher Sweets cigar wraps",
-      "image": "swisher-sweets.jpg"
+      "price": 14.99,
+      "description": "Precision guillotine-style cigar cutter",
+      "image": "cigar-cutter-guillotine.jpg"
     },
     {
-      "id": "american-spirit",
-      "name": "American Spirit",
+      "id": "corn-cob-pipe",
+      "name": "Corn Cob Pipe",
       "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "American Spirit tobacco products",
-      "image": "american-spirit.jpg"
+      "price": 8.99,
+      "description": "Traditional carved corn cob smoking pipe",
+      "image": "corn-cob-pipe.jpg"
     },
     {
-      "id": "find-cigars",
-      "name": "Find Cigars",
+      "id": "zippo-lighter",
+      "name": "Zippo Lighter Chrome",
       "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Premium cigar selection",
-      "image": "find-cigars.jpg"
-    },
-    {
-      "id": "hookah",
-      "name": "Hookah",
-      "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Hookah pipes and accessories",
-      "image": "hookah.jpg"
-    },
-    {
-      "id": "kratom",
-      "name": "Kratom",
-      "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Kratom powder and products",
-      "image": "kratom.jpg"
-    },
-    {
-      "id": "drug-testing-kits",
-      "name": "Drug Testing Kits",
-      "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Substance testing kits",
-      "image": "drug-testing-kits.jpg"
-    },
-    {
-      "id": "honey-packets",
-      "name": "Honey Packets",
-      "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Honey product packets",
-      "image": "honey-packets.jpg"
-    },
-    {
-      "id": "labubu",
-      "name": "Labubu",
-      "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Labubu collectible figures",
-      "image": "labubu.jpg"
-    },
-    {
-      "id": "find-cigars",
-      "name": "Find Cigars",
-      "category": "Tobacco & Specialty",
-      "price": 0,
-      "description": "Premium cigar selection",
-      "image": "find-cigars.jpg"
+      "price": 24.99,
+      "description": "Classic Zippo windproof lighter",
+      "image": "zippo-lighter-chrome.jpeg"
     }
   ]
 }

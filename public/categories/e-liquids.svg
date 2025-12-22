@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#330033;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0033;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow2" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="600" height="800" fill="url(#bgGrad2)"/>
+  <rect width="600" height="800" fill="url(#glow2)"/>
+  
+  <!-- E-Liquid Bottles -->
+  <g transform="translate(300, 350)">
+    <!-- Left Bottle -->
+    <g transform="translate(-80, 0)">
+      <rect x="-25" y="-60" width="50" height="140" rx="8" fill="#ff1493" opacity="0.3" stroke="#ec4899" stroke-width="2"/>
+      <rect x="-20" y="-50" width="40" height="30" rx="4" fill="#ec4899" stroke="#ff1493" stroke-width="2"/>
+      <ellipse cx="0" cy="-55" rx="22" ry="6" fill="#ff1493"/>
+      <rect x="-8" y="-65" width="16" height="15" fill="#ff1493"/>
+      <!-- Liquid inside -->
+      <rect x="-18" y="0" width="36" height="70" fill="#ff1493" opacity="0.6"/>
+    </g>
+    
+    <!-- Center Bottle -->
+    <g transform="translate(0, 0)">
+      <rect x="-25" y="-70" width="50" height="150" rx="8" fill="#8b5cf6" opacity="0.3" stroke="#8b5cf6" stroke-width="2"/>
+      <rect x="-20" y="-60" width="40" height="35" rx="4" fill="#8b5cf6" stroke="#8b5cf6" stroke-width="2"/>
+      <ellipse cx="0" cy="-65" rx="22" ry="6" fill="#8b5cf6"/>
+      <rect x="-8" y="-75" width="16" height="15" fill="#8b5cf6"/>
+      <!-- Liquid inside -->
+      <rect x="-18" y="-10" width="36" height="80" fill="#8b5cf6" opacity="0.6"/>
+    </g>
+    
+    <!-- Right Bottle -->
+    <g transform="translate(80, 0)">
+      <rect x="-25" y="-50" width="50" height="130" rx="8" fill="#00ff88" opacity="0.3" stroke="#00ff88" stroke-width="2"/>
+      <rect x="-20" y="-40" width="40" height="28" rx="4" fill="#00ff88" stroke="#00ff88" stroke-width="2"/>
+      <ellipse cx="0" cy="-45" rx="22" ry="6" fill="#00ff88"/>
+      <rect x="-8" y="-55" width="16" height="15" fill="#00ff88"/>
+      <!-- Liquid inside -->
+      <rect x="-18" y="10" width="36" height="50" fill="#00ff88" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- Label -->
+  <text x="300" y="600" font-size="48" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">
+    E-LIQUIDS
+  </text>
+  <line x1="120" y1="630" x2="480" y2="630" stroke="#ec4899" stroke-width="3"/>
+</svg>
