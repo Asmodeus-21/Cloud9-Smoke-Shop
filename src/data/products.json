@@ -1,0 +1,408 @@
+{
+  "products": [
+    {
+      "id": "puffco-peak",
+      "name": "Puffco Peak",
+      "category": "Devices & Vape",
+      "price": 0,
+      "description": "Premium dab device with innovative heating technology",
+      "image": "puffco-peak.jpg",
+      "featured": true
+    },
+    {
+      "id": "puffco-peak-pro",
+      "name": "Puffco Peak Pro",
+      "category": "Devices & Vape",
+      "price": 0,
+      "description": "Advanced dab device with enhanced features",
+      "image": "puffco-peak-pro.jpg",
+      "featured": true
+    },
+    {
+      "id": "510-batteries",
+      "name": "510 Batteries",
+      "category": "Devices & Vape",
+      "price": 0,
+      "description": "Compatible batteries for vape devices",
+      "image": "510-batteries.jpg"
+    },
+    {
+      "id": "vape-accessories",
+      "name": "Vape Accessories",
+      "category": "Devices & Vape",
+      "price": 0,
+      "description": "Essential vape device accessories",
+      "image": "vape-accessories.jpg"
+    },
+    {
+      "id": "smoke-buddy",
+      "name": "Smoke Buddy",
+      "category": "Devices & Vape",
+      "price": 0,
+      "description": "Personal smoke filter device",
+      "image": "smoke-buddy.jpg"
+    },
+    {
+      "id": "torches",
+      "name": "Torches",
+      "category": "Devices & Vape",
+      "price": 0,
+      "description": "Precision torches for concentrates",
+      "image": "torches.jpg"
+    },
+    {
+      "id": "butane",
+      "name": "Butane",
+      "category": "Devices & Vape",
+      "price": 0,
+      "description": "Premium butane fuel",
+      "image": "butane.jpg"
+    },
+    {
+      "id": "bongs",
+      "name": "Bongs",
+      "category": "Glass",
+      "price": 0,
+      "description": "Hand-crafted glass water pipes",
+      "image": "bongs.jpg",
+      "featured": true
+    },
+    {
+      "id": "bubblers",
+      "name": "Bubblers",
+      "category": "Glass",
+      "price": 0,
+      "description": "Portable water filtration devices",
+      "image": "bubblers.jpg"
+    },
+    {
+      "id": "pipes",
+      "name": "Pipes",
+      "category": "Glass",
+      "price": 0,
+      "description": "Classic glass smoking pipes",
+      "image": "pipes.jpg"
+    },
+    {
+      "id": "bowls",
+      "name": "Bowls",
+      "category": "Glass",
+      "price": 0,
+      "description": "Replacement glass bowls",
+      "image": "bowls.jpg"
+    },
+    {
+      "id": "ashtrays",
+      "name": "Ashtrays",
+      "category": "Glass",
+      "price": 0,
+      "description": "Glass and ceramic ashtrays",
+      "image": "ashtrays.jpg"
+    },
+    {
+      "id": "bong-case",
+      "name": "Bong Case",
+      "category": "Glass",
+      "price": 0,
+      "description": "Protective carrying case for bongs",
+      "image": "bong-case.jpg"
+    },
+    {
+      "id": "cookies-glass",
+      "name": "Cookies Glass",
+      "category": "Glass",
+      "price": 0,
+      "description": "Premium branded glass collection",
+      "image": "cookies-glass.jpg"
+    },
+    {
+      "id": "dab-rigs",
+      "name": "Dab Rigs",
+      "category": "Dab & Concentrate",
+      "price": 0,
+      "description": "Professional dab rig setups",
+      "image": "dab-rigs.jpg",
+      "featured": true
+    },
+    {
+      "id": "dab-accessories",
+      "name": "Dab Accessories",
+      "category": "Dab & Concentrate",
+      "price": 0,
+      "description": "Tools and accessories for dab use",
+      "image": "dab-accessories.jpg"
+    },
+    {
+      "id": "terp-slurpers",
+      "name": "Terp Slurpers",
+      "category": "Dab & Concentrate",
+      "price": 0,
+      "description": "Advanced terp slurper nails",
+      "image": "terp-slurpers.jpg"
+    },
+    {
+      "id": "nectar-collectors",
+      "name": "Nectar Collectors",
+      "category": "Dab & Concentrate",
+      "price": 0,
+      "description": "Portable concentrate extraction tools",
+      "image": "nectar-collectors.jpg"
+    },
+    {
+      "id": "buckets",
+      "name": "Buckets",
+      "category": "Dab & Concentrate",
+      "price": 0,
+      "description": "Replacement buckets for dab nails",
+      "image": "buckets.jpg"
+    },
+    {
+      "id": "raw-rolling-papers",
+      "name": "RAW Rolling Papers",
+      "category": "Rolling",
+      "price": 0,
+      "description": "Classic unbleached rolling papers",
+      "image": "raw-rolling-papers.jpg"
+    },
+    {
+      "id": "rolling-papers",
+      "name": "Rolling Papers",
+      "category": "Rolling",
+      "price": 0,
+      "description": "Premium rolling paper selection",
+      "image": "rolling-papers.jpg"
+    },
+    {
+      "id": "hemp-wraps",
+      "name": "Hemp Wraps",
+      "category": "Rolling",
+      "price": 0,
+      "description": "Natural hemp leaf wraps",
+      "image": "hemp-wraps.jpg"
+    },
+    {
+      "id": "king-palm",
+      "name": "King Palm",
+      "category": "Rolling",
+      "price": 0,
+      "description": "Premium palm leaf wraps",
+      "image": "king-palm.jpg"
+    },
+    {
+      "id": "backwoods",
+      "name": "Backwoods",
+      "category": "Rolling",
+      "price": 0,
+      "description": "Classic tobacco leaf wraps",
+      "image": "backwoods.jpg"
+    },
+    {
+      "id": "looseleaf",
+      "name": "Looseleaf",
+      "category": "Rolling",
+      "price": 0,
+      "description": "Looseleaf wrap products",
+      "image": "looseleaf.jpg"
+    },
+    {
+      "id": "grabba-leaf",
+      "name": "Grabba Leaf",
+      "category": "Rolling",
+      "price": 0,
+      "description": "Premium grabba leaf",
+      "image": "grabba-leaf.jpg"
+    },
+    {
+      "id": "grinders",
+      "name": "Grinders",
+      "category": "Accessories",
+      "price": 0,
+      "description": "Premium herb grinders",
+      "image": "grinders.jpg"
+    },
+    {
+      "id": "rolling-trays",
+      "name": "Rolling Trays",
+      "category": "Accessories",
+      "price": 0,
+      "description": "Rolling trays and work surfaces",
+      "image": "rolling-trays.jpg"
+    },
+    {
+      "id": "lighters",
+      "name": "Lighters",
+      "category": "Accessories",
+      "price": 0,
+      "description": "Quality lighters and ignition tools",
+      "image": "lighters.jpg"
+    },
+    {
+      "id": "scales",
+      "name": "Scales",
+      "category": "Accessories",
+      "price": 0,
+      "description": "Precision digital scales",
+      "image": "scales.jpg"
+    },
+    {
+      "id": "glass-cleaners",
+      "name": "Glass Cleaners",
+      "category": "Accessories",
+      "price": 0,
+      "description": "Specialized glass cleaning solutions",
+      "image": "glass-cleaners.jpg"
+    },
+    {
+      "id": "backpacks",
+      "name": "Backpacks",
+      "category": "Lifestyle & Storage",
+      "price": 0,
+      "description": "Durable carry backpacks",
+      "image": "backpacks.jpg"
+    },
+    {
+      "id": "smell-proof-backpacks",
+      "name": "Smell-Proof Backpacks",
+      "category": "Lifestyle & Storage",
+      "price": 0,
+      "description": "Odor-resistant storage backpacks",
+      "image": "smell-proof-backpacks.jpg"
+    },
+    {
+      "id": "pouches",
+      "name": "Pouches",
+      "category": "Lifestyle & Storage",
+      "price": 0,
+      "description": "Compact storage pouches",
+      "image": "pouches.jpg"
+    },
+    {
+      "id": "mylar-bags",
+      "name": "Mylar Bags",
+      "category": "Lifestyle & Storage",
+      "price": 0,
+      "description": "Resealable mylar storage bags",
+      "image": "mylar-bags.jpg"
+    },
+    {
+      "id": "jewelry",
+      "name": "Jewelry",
+      "category": "Lifestyle & Storage",
+      "price": 0,
+      "description": "Lifestyle jewelry collection",
+      "image": "jewelry.jpg"
+    },
+    {
+      "id": "posters",
+      "name": "Posters",
+      "category": "Lifestyle & Storage",
+      "price": 0,
+      "description": "Premium poster collection",
+      "image": "posters.jpg"
+    },
+    {
+      "id": "air-fresheners",
+      "name": "Air Fresheners",
+      "category": "Fresheners & Detox",
+      "price": 0,
+      "description": "Premium air freshening products",
+      "image": "air-fresheners.jpg"
+    },
+    {
+      "id": "candles",
+      "name": "Candles",
+      "category": "Fresheners & Detox",
+      "price": 0,
+      "description": "Scented candles",
+      "image": "candles.jpg"
+    },
+    {
+      "id": "detox-drinks",
+      "name": "Detox Drinks",
+      "category": "Fresheners & Detox",
+      "price": 0,
+      "description": "Detoxification beverage products",
+      "image": "detox-drinks.jpg"
+    },
+    {
+      "id": "pouch-tobacco",
+      "name": "Pouch Tobacco",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Tobacco pouch products",
+      "image": "pouch-tobacco.jpg"
+    },
+    {
+      "id": "swisher-sweets",
+      "name": "Swisher Sweets",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Swisher Sweets cigar wraps",
+      "image": "swisher-sweets.jpg"
+    },
+    {
+      "id": "american-spirit",
+      "name": "American Spirit",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "American Spirit tobacco products",
+      "image": "american-spirit.jpg"
+    },
+    {
+      "id": "find-cigars",
+      "name": "Find Cigars",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Premium cigar selection",
+      "image": "find-cigars.jpg"
+    },
+    {
+      "id": "hookah",
+      "name": "Hookah",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Hookah pipes and accessories",
+      "image": "hookah.jpg"
+    },
+    {
+      "id": "kratom",
+      "name": "Kratom",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Kratom powder and products",
+      "image": "kratom.jpg"
+    },
+    {
+      "id": "drug-testing-kits",
+      "name": "Drug Testing Kits",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Substance testing kits",
+      "image": "drug-testing-kits.jpg"
+    },
+    {
+      "id": "honey-packets",
+      "name": "Honey Packets",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Honey product packets",
+      "image": "honey-packets.jpg"
+    },
+    {
+      "id": "labubu",
+      "name": "Labubu",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Labubu collectible figures",
+      "image": "labubu.jpg"
+    },
+    {
+      "id": "find-cigars",
+      "name": "Find Cigars",
+      "category": "Tobacco & Specialty",
+      "price": 0,
+      "description": "Premium cigar selection",
+      "image": "find-cigars.jpg"
+    }
+  ]
+}

@@ -1,16 +1,33 @@
 
 import React, { useState } from 'react';
-import { PRODUCTS } from '../constants';
-import ProductCard from '../components/ProductCard';
+import productData from '@/src/data/products.json';
+import ProductCard from '@/components/ProductCard';
+import { validateProducts } from '@/src/data/productValidator';
 
-const CATEGORIES = ['All', 'Vapes', 'Pods', 'Disposables', 'Juices', 'Glass', 'Accessories'];
+const CATEGORIES = [
+  'All',
+  'Devices & Vape',
+  'Glass',
+  'Dab & Concentrate',
+  'Rolling',
+  'Accessories',
+  'Lifestyle & Storage',
+  'Fresheners & Detox',
+  'Tobacco & Specialty'
+];
 
 const Shop: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const filteredProducts = activeCategory === 'All' 
-    ? PRODUCTS 
-    : PRODUCTS.filter(p => p.category === activeCategory);
+  // Validate products on mount (dev mode only logs warnings)
+  const validation = validateProducts(productData.products);
+  if (!validation.isValid && process.env.NODE_ENV === 'development') {
+    console.error('Product validation failed:', validation.errors);
+  }
+
+  const filteredProducts = activeCategory === 'All'
+    ? productData.products
+    : productData.products.filter(p => p.category === activeCategory);
 
   return (
     <div className="pb-32">
