@@ -6,7 +6,7 @@
       "category": "Devices & Vape",
       "price": 31.99,
       "description": "No flavor. Non-flavor product. Premium clear disposable device with advanced technology and consistent performance.",
-      "image": "geek-bar-pulse-x-25000-clear.jpeg",
+      "image": "geek-bar-pulse-x-25000-clear.jpg",
       "featured": true
     },
     {
@@ -15,7 +15,7 @@
       "category": "Devices & Vape",
       "price": 29.99,
       "description": "No flavor. Non-flavor product. Premium quality disposable device designed for pure, flavor-free performance.",
-      "image": "ut-bar-clear-no-flavor.jpeg"
+      "image": "ut-bar-clear-no-flavor.jpg"
     },
     {
       "id": "puffco-pivot",
@@ -23,7 +23,7 @@
       "category": "Devices & Vape",
       "price": 144.99,
       "description": "Premium portable dab device with advanced heating technology and precise temperature control.",
-      "image": "puffco-pivot-device.jpeg",
+      "image": "puffco-pivot-device.jpg",
       "featured": true
     },
     {
@@ -32,7 +32,7 @@
       "category": "Devices & Vape",
       "price": 24.99,
       "description": "Classic Virginia tobacco pods for JUUL compatibility. Authentic tobacco experience.",
-      "image": "juul-virginia-tobacco-pods.png"
+      "image": "juul-virginia-tobacco-pods.jpg"
     },
     {
       "id": "straight-tube-bong",
@@ -114,7 +114,7 @@
       "category": "Glass",
       "price": 299.99,
       "description": "Premium Cookies 2 da Dome straight tube glass bong. Premium borosilicate construction.",
-      "image": "cookies-2da-dome-straight.jpeg"
+      "image": "cookies-2da-dome-straight.JPG"
     },
     {
       "id": "cookies-2da-dome-beaker",
@@ -122,7 +122,7 @@
       "category": "Glass",
       "price": 299.99,
       "description": "Premium Cookies 2 da Dome beaker base glass bong. Premium borosilicate construction.",
-      "image": "cookies-2da-dome-beaker.jpeg"
+      "image": "cookies-2da-dome-beaker.JPG"
     },
     {
       "id": "cookies-original-beaker",
@@ -130,7 +130,7 @@
       "category": "Glass",
       "price": 159.99,
       "description": "Classic Cookies Original beaker base bong. Reliable and durable glass construction.",
-      "image": "cookies-original-beaker.jpeg"
+      "image": "cookies-original-beaker.JPG"
     },
     {
       "id": "cookies-original-straight",
@@ -138,7 +138,7 @@
       "category": "Glass",
       "price": 159.99,
       "description": "Classic Cookies Original straight tube bong. Reliable and durable glass construction.",
-      "image": "cookies-original-straight.jpeg"
+      "image": "cookies-original-straight.JPG"
     },
     {
       "id": "cookies-flame-straight",
@@ -146,7 +146,7 @@
       "category": "Glass",
       "price": 179.99,
       "description": "Cookies Flame straight tube glass bong. Quality borosilicate construction with Flame design.",
-      "image": "cookies-flame-straight.jpeg"
+      "image": "cookies-flame-straight.JPG"
     },
     {
       "id": "cookies-flame-beaker",
@@ -154,7 +154,7 @@
       "category": "Glass",
       "price": 179.99,
       "description": "Cookies Flame beaker base glass bong. Quality borosilicate construction with Flame design.",
-      "image": "cookies-flame-beaker.jpeg"
+      "image": "cookies-flame-beaker.JPG"
     },
     {
       "id": "cookies-flame-straight-7mm",
@@ -162,7 +162,7 @@
       "category": "Glass",
       "price": 259.99,
       "description": "Cookies Flame straight tube bong with thick 7mm borosilicate glass. Enhanced durability and premium build.",
-      "image": "cookies-flame-straight-7mm.jpeg"
+      "image": "cookies-flame-straight-7mm.JPG"
     },
     {
       "id": "cookies-flame-beaker-7mm",
@@ -170,7 +170,7 @@
       "category": "Glass",
       "price": 259.99,
       "description": "Cookies Flame beaker bong with thick 7mm borosilicate glass. Enhanced durability and premium build.",
-      "image": "cookies-flame-beaker-7mm.jpeg"
+      "image": "cookies-flame-beaker-7mm.JPG"
     },
     {
       "id": "cookies-mighty-mini",
@@ -180,7 +180,7 @@
       "basePrice": 109.99,
       "maxPrice": 140.00,
       "description": "Compact Cookies Mighty Mini premium glass bong. Available in multiple configurations. Perfect for portability.",
-      "image": "cookies-mighty-mini.jpeg",
+      "image": "cookies-mighty-mini.JPG",
       "variants": [
         {
           "id": "cookies-mighty-mini-standard",
@@ -202,7 +202,7 @@
       "basePrice": 249.99,
       "maxPrice": 299.99,
       "description": "Premium Cookie V straight tube glass bong. Available in multiple sizes and configurations.",
-      "image": "cookie-v-straight.jpeg",
+      "image": "cookie-v-straight.JPG",
       "variants": [
         {
           "id": "cookie-v-straight-base",
@@ -222,7 +222,7 @@
       "category": "Glass",
       "price": 299.99,
       "description": "Premium Cookie V beaker base glass bong. Premium borosilicate construction with elevated design.",
-      "image": "cookie-v-beaker.jpeg"
+      "image": "cookie-v-beaker.JPG"
     },
     {
       "id": "dab-rig-mini",
@@ -311,7 +311,7 @@
       "category": "Rolling",
       "price": 10.99,
       "description": "Non-tobacco leaf wraps. 5-pack.",
-      "image": "backwoods-original.jpeg"
+      "image": "backwoods-honey-berry.jpeg"
     },
     {
       "id": "santa-cruz-shredder",
