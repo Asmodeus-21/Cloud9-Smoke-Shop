@@ -1,55 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
-  <!-- Background gradient -->
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#330033;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1a0033;stop-opacity:1" />
+    <linearGradient id="bottleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f0f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
     </linearGradient>
-    <radialGradient id="glow2" cx="50%" cy="30%" r="60%">
-      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.4" />
-      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0" />
-    </radialGradient>
+    <linearGradient id="liquidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4C6ABD;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#2d3e7a;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="liquid3dShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  
-  <rect width="600" height="800" fill="url(#bgGrad2)"/>
-  <rect width="600" height="800" fill="url(#glow2)"/>
-  
-  <!-- E-Liquid Bottles -->
-  <g transform="translate(300, 350)">
-    <!-- Left Bottle -->
-    <g transform="translate(-80, 0)">
-      <rect x="-25" y="-60" width="50" height="140" rx="8" fill="#ff1493" opacity="0.3" stroke="#ec4899" stroke-width="2"/>
-      <rect x="-20" y="-50" width="40" height="30" rx="4" fill="#ec4899" stroke="#ff1493" stroke-width="2"/>
-      <ellipse cx="0" cy="-55" rx="22" ry="6" fill="#ff1493"/>
-      <rect x="-8" y="-65" width="16" height="15" fill="#ff1493"/>
-      <!-- Liquid inside -->
-      <rect x="-18" y="0" width="36" height="70" fill="#ff1493" opacity="0.6"/>
-    </g>
-    
-    <!-- Center Bottle -->
-    <g transform="translate(0, 0)">
-      <rect x="-25" y="-70" width="50" height="150" rx="8" fill="#8b5cf6" opacity="0.3" stroke="#8b5cf6" stroke-width="2"/>
-      <rect x="-20" y="-60" width="40" height="35" rx="4" fill="#8b5cf6" stroke="#8b5cf6" stroke-width="2"/>
-      <ellipse cx="0" cy="-65" rx="22" ry="6" fill="#8b5cf6"/>
-      <rect x="-8" y="-75" width="16" height="15" fill="#8b5cf6"/>
-      <!-- Liquid inside -->
-      <rect x="-18" y="-10" width="36" height="80" fill="#8b5cf6" opacity="0.6"/>
-    </g>
-    
-    <!-- Right Bottle -->
-    <g transform="translate(80, 0)">
-      <rect x="-25" y="-50" width="50" height="130" rx="8" fill="#00ff88" opacity="0.3" stroke="#00ff88" stroke-width="2"/>
-      <rect x="-20" y="-40" width="40" height="28" rx="4" fill="#00ff88" stroke="#00ff88" stroke-width="2"/>
-      <ellipse cx="0" cy="-45" rx="22" ry="6" fill="#00ff88"/>
-      <rect x="-8" y="-55" width="16" height="15" fill="#00ff88"/>
-      <!-- Liquid inside -->
-      <rect x="-18" y="10" width="36" height="50" fill="#00ff88" opacity="0.6"/>
-    </g>
+  <circle cx="100" cy="110" r="85" fill="#4C6ABD" opacity="0.08"/>
+  <g filter="url(#liquid3dShadow)">
+    <path d="M 75 60 Q 70 70 70 100 L 70 170 Q 70 180 80 180 L 120 180 Q 130 180 130 170 L 130 100 Q 130 70 125 60 Z" fill="url(#bottleGradient)" stroke="#999" stroke-width="1.5"/>
+    <path d="M 75 60 Q 72 75 72 100 L 72 170 Q 72 178 80 178 L 82 175 L 82 60 Z" fill="#fff" opacity="0.4"/>
+    <path d="M 128 65 L 132 62 L 132 155 L 128 158 Z" fill="#fff" opacity="0.25"/>
   </g>
-  
-  <!-- Label -->
-  <text x="300" y="600" font-size="48" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">
-    E-LIQUIDS
-  </text>
-  <line x1="120" y1="630" x2="480" y2="630" stroke="#ec4899" stroke-width="3"/>
+  <g filter="url(#liquid3dShadow)">
+    <path d="M 72 120 L 72 170 Q 72 178 80 178 L 120 178 Q 128 178 128 170 L 128 120 Z" fill="url(#liquidGradient)"/>
+    <path d="M 72 120 Q 90 115 100 120 Q 110 125 128 120" stroke="#4C6ABD" stroke-width="1" fill="none" opacity="0.8"/>
+  </g>
+  <g filter="url(#liquid3dShadow)">
+    <rect x="85" y="45" width="30" height="15" rx="2" fill="#4C6ABD" stroke="#2d3e7a" stroke-width="1.5"/>
+    <rect x="85" y="45" width="30" height="4" fill="#fff" opacity="0.5"/>
+  </g>
+  <g opacity="0.6">
+    <rect x="78" y="130" width="44" height="25" rx="3" fill="#fff" opacity="0.8"/>
+    <text x="100" y="142" font-family="Arial" font-size="8" font-weight="bold" fill="#4C6ABD" text-anchor="middle">E-LIQUID</text>
+  </g>
 </svg>

@@ -1,94 +1,63 @@
 {
   "products": [
     {
+      "id": "geek-bar-pulse-x-25000",
+      "name": "Geek Bar Pulse X 25000 – Clear (No Flavor)",
+      "category": "Devices & Vape",
+      "price": 31.99,
+      "description": "No flavor. Non-flavor product. Premium clear disposable device with advanced technology and consistent performance.",
+      "image": "geek-bar-pulse-x-25000-clear.jpeg",
+      "featured": true
+    },
+    {
+      "id": "ut-bar-clear",
+      "name": "UT Bar Clear – No Flavor",
+      "category": "Devices & Vape",
+      "price": 29.99,
+      "description": "Non-flavor clear product. Premium quality disposable device designed for pure, flavor-free performance.",
+      "image": "ut-bar-clear-no-flavor.jpeg"
+    },
+    {
+      "id": "puffco-pivot",
+      "name": "Puffco Pivot Device",
+      "category": "Devices & Vape",
+      "price": 144.99,
+      "description": "Premium portable dab device with advanced heating technology and precise temperature control",
+      "image": "puffco-pivot-device.jpeg",
+      "featured": true
+    },
+    {
+      "id": "juul-virginia-tobacco",
+      "name": "JUUL Virginia Tobacco Pods",
+      "category": "Devices & Vape",
+      "price": 24.99,
+      "description": "Classic Virginia tobacco pods for JUUL compatibility. Authentic tobacco experience.",
+      "image": "juul-virginia-tobacco-pods.png"
+    },
+    {
       "id": "puffco-plus",
       "name": "Puffco Plus Pen",
       "category": "Devices & Vape",
       "price": 79.99,
       "description": "Portable dab pen with precision temperature control",
-      "image": "puffco-plus-pen.jpeg",
-      "featured": true
-    },
-    {
-      "id": "geekvape-aegis",
-      "name": "GeekVape Aegis Legend",
-      "category": "Devices & Vape",
-      "price": 89.99,
-      "description": "Rugged and powerful dual-battery mod",
-      "image": "geekvape-aegis-legend.jpg"
-    },
-    {
-      "id": "juul-starter",
-      "name": "JUUL Starter Kit",
-      "category": "Devices & Vape",
-      "price": 49.99,
-      "description": "Sleek pod-based vaping system",
-      "image": "juul-starter-kit.png"
-    },
-    {
-      "id": "lost-vape-orion",
-      "name": "Lost Vape Orion DNA",
-      "category": "Devices & Vape",
-      "price": 99.99,
-      "description": "Advanced chipset with premium build quality",
-      "image": "lost-vape-orion-dna.jpg"
-    },
-    {
-      "id": "smok-nord",
-      "name": "SMOK Nord 4 Kit",
-      "category": "Devices & Vape",
-      "price": 59.99,
-      "description": "Versatile pod system with multiple coil options",
-      "image": "smok-nord-4-kit.jpg"
-    },
-    {
-      "id": "uwell-caliburn",
-      "name": "Uwell Caliburn G2",
-      "category": "Devices & Vape",
-      "price": 44.99,
-      "description": "Compact pod vape with excellent flavor",
-      "image": "uwell-caliburn-g2.webp"
-    },
-    {
-      "id": "vaporesso-xros",
-      "name": "Vaporesso XROS 3",
-      "category": "Devices & Vape",
-      "price": 54.99,
-      "description": "Innovative pod system with OLED display",
-      "image": "vaporesso-xros-3.png"
-    },
-    {
-      "id": "voopoo-drag",
-      "name": "VooPoo Drag X",
-      "category": "Devices & Vape",
-      "price": 69.99,
-      "description": "Powerful dual-battery mod with fast firing",
-      "image": "voopoo-drag-x.jpeg"
-    },
-    {
-      "id": "vuse-alto",
-      "name": "Vuse Alto Kit",
-      "category": "Devices & Vape",
-      "price": 34.99,
-      "description": "Simple and reliable pod system",
-      "image": "vuse-alto-kit.jpg"
-    },
-    {
-      "id": "elf-bar",
-      "name": "Elf Bar BC5000",
-      "category": "Devices & Vape",
-      "price": 9.99,
-      "description": "Disposable vape with 5000 puffs",
-      "image": "elf-bar-bc5000.png"
+      "image": "puffco-plus-pen.jpeg"
     },
     {
       "id": "straight-tube-bong",
       "name": "Straight Tube Bong",
       "category": "Glass",
-      "price": 129.99,
-      "description": "Classic glass water pipe with 8mm thickness",
+      "price": 79.99,
+      "description": "Classic glass water pipe with 8mm thickness. Straight tube design - NOT beaker.",
       "image": "straight-tube-bong.jpg",
       "featured": true
+    },
+    {
+      "id": "beaker-bong",
+      "name": "Beaker Bong",
+      "category": "Glass",
+      "price": 89.99,
+      "description": "Premium beaker-base water pipe for enhanced stability and water capacity",
+      "image": "beaker-bong.jpg"
     },
     {
       "id": "spoon-pipe",
@@ -102,7 +71,7 @@
       "id": "sherlock-pipe",
       "name": "Sherlock Pipe Glass",
       "category": "Glass",
-      "price": 34.99,
+      "price": 11.99,
       "description": "Classic Sherlock design in hand-blown glass",
       "image": "sherlock-pipe-glass.webp"
     },
@@ -110,17 +79,26 @@
       "id": "glass-bubbler",
       "name": "Glass Bubbler Pipe",
       "category": "Glass",
-      "price": 44.99,
+      "price": 19.99,
       "description": "Water-filtered portable smoking device",
       "image": "glass-bubbler-pipe.webp"
     },
     {
       "id": "gravity-bong",
-      "name": "Gravity Bong Glass",
+      "name": "Gravity Bong (Standard)",
       "category": "Glass",
-      "price": 89.99,
-      "description": "High-capacity gravity-fed bong system",
-      "image": "gravity-bong-glass.webp"
+      "price": 300.00,
+      "description": "High-capacity gravity-fed bong system. Premium build.",
+      "image": "gravity-bong-glass.webp",
+      "featured": true
+    },
+    {
+      "id": "tyson-gravity-bong",
+      "name": "Tyson Gravity Bong 2.0",
+      "category": "Glass",
+      "price": 349.99,
+      "description": "Premium Tyson Stundenglass gravity bong with advanced engineering",
+      "image": "tyson-gravity-bong-2.0.jpeg"
     },
     {
       "id": "ash-catcher",
@@ -134,15 +112,131 @@
       "id": "glass-downstem",
       "name": "Glass Downstem",
       "category": "Glass",
-      "price": 14.99,
+      "price": 11.99,
       "description": "Replacement borosilicate glass downstem",
       "image": "glass-downstem.jpeg"
+    },
+    {
+      "id": "cookies-2da-dome-straight",
+      "name": "Cookies 2 da Dome Straight",
+      "category": "Glass",
+      "price": 299.99,
+      "description": "Premium Cookies 2 da Dome straight tube glass bong. Premium borosilicate construction.",
+      "image": "cookies-2da-dome-straight.jpeg"
+    },
+    {
+      "id": "cookies-2da-dome-beaker",
+      "name": "Cookies 2 da Dome Beaker",
+      "category": "Glass",
+      "price": 299.99,
+      "description": "Premium Cookies 2 da Dome beaker base glass bong. Premium borosilicate construction.",
+      "image": "cookies-2da-dome-beaker.jpeg"
+    },
+    {
+      "id": "cookies-original-beaker",
+      "name": "Cookies Original Beaker",
+      "category": "Glass",
+      "price": 159.99,
+      "description": "Classic Cookies Original beaker base bong. Reliable and durable glass construction.",
+      "image": "cookies-original-beaker.jpeg"
+    },
+    {
+      "id": "cookies-original-straight",
+      "name": "Cookies Original Straight",
+      "category": "Glass",
+      "price": 159.99,
+      "description": "Classic Cookies Original straight tube bong. Reliable and durable glass construction.",
+      "image": "cookies-original-straight.jpeg"
+    },
+    {
+      "id": "cookies-flame-straight",
+      "name": "Cookies Flame Straight",
+      "category": "Glass",
+      "price": 179.99,
+      "description": "Cookies Flame straight tube glass bong. Quality borosilicate construction with Flame design.",
+      "image": "cookies-flame-straight.jpeg"
+    },
+    {
+      "id": "cookies-flame-beaker",
+      "name": "Cookies Flame Beaker",
+      "category": "Glass",
+      "price": 179.99,
+      "description": "Cookies Flame beaker base glass bong. Quality borosilicate construction with Flame design.",
+      "image": "cookies-flame-beaker.jpeg"
+    },
+    {
+      "id": "cookies-flame-straight-7mm",
+      "name": "Cookies Flame Straight 7mm",
+      "category": "Glass",
+      "price": 259.99,
+      "description": "Cookies Flame straight tube bong with thick 7mm borosilicate glass. Enhanced durability and premium build.",
+      "image": "cookies-flame-straight-7mm.jpeg"
+    },
+    {
+      "id": "cookies-flame-beaker-7mm",
+      "name": "Cookies Flame Beaker 7mm",
+      "category": "Glass",
+      "price": 259.99,
+      "description": "Cookies Flame beaker bong with thick 7mm borosilicate glass. Enhanced durability and premium build.",
+      "image": "cookies-flame-beaker-7mm.jpeg"
+    },
+    {
+      "id": "cookies-mighty-mini",
+      "name": "Cookies Mighty Mini",
+      "category": "Glass",
+      "price": 109.99,
+      "basePrice": 109.99,
+      "maxPrice": 140.00,
+      "description": "Compact Cookies Mighty Mini premium glass bong. Available in multiple configurations. Perfect for portability.",
+      "image": "cookies-mighty-mini.jpeg",
+      "variants": [
+        {
+          "id": "cookies-mighty-mini-standard",
+          "name": "Standard",
+          "price": 109.99
+        },
+        {
+          "id": "cookies-mighty-mini-premium",
+          "name": "Premium",
+          "price": 140.00
+        }
+      ]
+    },
+    {
+      "id": "cookie-v-straight",
+      "name": "Cookie V Straight",
+      "category": "Glass",
+      "price": 249.99,
+      "basePrice": 249.99,
+      "maxPrice": 299.99,
+      "description": "Premium Cookie V straight tube glass bong. Available in multiple sizes and configurations.",
+      "image": "cookie-v-straight.jpeg",
+      "variants": [
+        {
+          "id": "cookie-v-straight-base",
+          "name": "Base Model",
+          "price": 249.99
+        },
+        {
+          "id": "cookie-v-straight-deluxe",
+          "name": "Deluxe Model",
+          "price": 299.99
+        }
+      ]
+    },
+    {
+      "id": "cookie-v-beaker",
+      "name": "Cookie V Beaker",
+      "category": "Glass",
+      "price": 299.99,
+      "description": "Premium Cookie V beaker base glass bong. Premium borosilicate construction with elevated design.",
+      "image": "cookie-v-beaker.jpeg"
     },
     {
       "id": "dab-rig-mini",
       "name": "Mini Dab Rig",
       "category": "Dab & Concentrate",
-      "price": 74.99,
+      "price": 39.99,
       "description": "Compact glass dab rig perfect for concentrates",
       "image": "dab-rig-mini.jpeg",
       "featured": true
@@ -151,7 +245,7 @@
       "id": "quartz-banger",
       "name": "Quartz Banger 14mm",
       "category": "Dab & Concentrate",
-      "price": 29.99,
+      "price": 19.99,
       "description": "High-quality quartz nail for dab rigs",
       "image": "quartz-banger-14mm.webp"
     },
@@ -167,23 +261,23 @@
       "id": "carb-cap",
       "name": "Carb Cap Glass",
       "category": "Dab & Concentrate",
-      "price": 14.99,
+      "price": 9.99,
       "description": "Glass carb cap for improved dab efficiency",
       "image": "carb-cap-glass.jpeg"
     },
     {
       "id": "nectar-collector",
-      "name": "Nectar Collector Kit",
+      "name": "Silicone Nectar Collector Kit",
       "category": "Dab & Concentrate",
-      "price": 39.99,
-      "description": "Complete nectar collector setup with titanium tip",
+      "price": 29.99,
+      "description": "Complete silicone nectar collector setup with titanium tip",
       "image": "nectar-collector-kit.jpeg"
     },
     {
       "id": "silicone-container",
       "name": "Silicone Wax Container",
       "category": "Dab & Concentrate",
-      "price": 4.99,
+      "price": 2.99,
       "description": "Non-stick silicone container for concentrates",
       "image": "silicone-wax-container.jpeg"
     },
@@ -199,7 +293,7 @@
       "id": "raw-cones",
       "name": "RAW Cones Classic",
       "category": "Rolling",
-      "price": 3.99,
+      "price": 2.99,
       "description": "Pre-rolled cone papers ready to fill",
       "image": "raw-cones-classic.jpg"
     },
@@ -207,7 +301,7 @@
       "id": "ocb-premium",
       "name": "OCB Premium Black",
       "category": "Rolling",
-      "price": 2.49,
+      "price": 2.99,
       "description": "Premium quality black rolling papers",
       "image": "ocb-premium-black.jpg"
     },
@@ -220,18 +314,18 @@
       "image": "zig-zag-orange.jpeg"
     },
     {
-      "id": "backwoods-honey",
-      "name": "Backwoods Honey Berry",
+      "id": "backwoods-original",
+      "name": "Backwoods Original",
       "category": "Rolling",
-      "price": 1.49,
-      "description": "Flavored tobacco leaf wraps",
-      "image": "backwoods-honey-berry.jpeg"
+      "price": 10.99,
+      "description": "Non-tobacco leaf wraps. 5-pack.",
+      "image": "backwoods-original.jpeg"
     },
     {
       "id": "santa-cruz-shredder",
       "name": "Santa Cruz Shredder",
       "category": "Rolling",
-      "price": 49.99,
+      "price": 17.99,
       "description": "Premium 4-piece herb grinder",
       "image": "santa-cruz-shredder.jpg"
     },
@@ -245,9 +339,9 @@
     },
     {
       "id": "clipper-lighter",
-      "name": "Clipper Lighter Solid",
+      "name": "Clipper Lighter (Solid)",
       "category": "Accessories",
-      "price": 3.99,
+      "price": 2.99,
       "description": "Refillable gas lighter with flint wheel",
       "image": "clipper-lighter-solid.jpeg"
     },
@@ -268,38 +362,6 @@
       "image": "battery-18650-sony.jpeg"
     },
     {
-      "id": "nitecore-charger",
-      "name": "Nitecore Charger i2",
-      "category": "Accessories",
-      "price": 29.99,
-      "description": "Intelligent dual-slot battery charger",
-      "image": "nitecore-charger-i2.jpg"
-    },
-    {
-      "id": "cotton-bacon",
-      "name": "Cotton Bacon Prime",
-      "category": "Accessories",
-      "price": 4.99,
-      "description": "Premium organic cotton for rebuilding",
-      "image": "cotton-bacon-prime.jpg"
-    },
-    {
-      "id": "smok-rpm-coils",
-      "name": "SMOK RPM Coils",
-      "category": "Accessories",
-      "price": 11.99,
-      "description": "Replacement coils for SMOK RPM pods",
-      "image": "smok-rpm-coils.jpeg"
-    },
-    {
-      "id": "resin-drip-tip",
-      "name": "Resin Drip Tip 810",
-      "category": "Accessories",
-      "price": 8.99,
-      "description": "Decorative resin drip tip for vapes",
-      "image": "resin-drip-tip-810.jpeg"
-    },
-    {
       "id": "raw-hat",
       "name": "RAW Snapback Hat",
       "category": "Lifestyle & Storage",
@@ -314,14 +376,6 @@
       "price": 79.99,
       "description": "Odor-resistant storage backpack with locking zippers",
       "image": "smell-proof-backpack.jpeg"
-    },
-    {
-      "id": "vape-mat",
-      "name": "Vape Mat Pad",
-      "category": "Lifestyle & Storage",
-      "price": 12.99,
-      "description": "Non-slip work surface for vaping setup",
-      "image": "vape-mat-pad.jpeg"
     },
     {
       "id": "detoxify-clean",
@@ -354,38 +408,6 @@
       "price": 11.99,
       "description": "Scented candle to mask odors",
       "image": "odor-candle-hippie.jpeg"
-    },
-    {
-      "id": "captain-black",
-      "name": "Captain Black Pouch",
-      "category": "Tobacco & Specialty",
-      "price": 6.99,
-      "description": "Premium loose tobacco pouch",
-      "image": "captain-black-pouch.jpeg"
-    },
-    {
-      "id": "cigar-cutter",
-      "name": "Cigar Cutter Guillotine",
-      "category": "Tobacco & Specialty",
-      "price": 14.99,
-      "description": "Precision guillotine-style cigar cutter",
-      "image": "cigar-cutter-guillotine.jpg"
-    },
-    {
-      "id": "corn-cob-pipe",
-      "name": "Corn Cob Pipe",
-      "category": "Tobacco & Specialty",
-      "price": 8.99,
-      "description": "Traditional carved corn cob smoking pipe",
-      "image": "corn-cob-pipe.jpg"
-    },
-    {
-      "id": "zippo-lighter",
-      "name": "Zippo Lighter Chrome",
-      "category": "Tobacco & Specialty",
-      "price": 24.99,
-      "description": "Classic Zippo windproof lighter",
-      "image": "zippo-lighter-chrome.jpeg"
     }
   ]
 }

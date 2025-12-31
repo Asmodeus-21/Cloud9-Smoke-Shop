@@ -13,12 +13,17 @@ export default {
         sans: ['Poppins', 'sans-serif'],
       },
       colors: {
+        brand: {
+          blue: '#4C6ABD',
+          white: '#FFFFFF',
+          near_black: '#090A0B',
+        },
         premium: {
-          dark: '#050505',
-          purple: '#8B5CF6',
-          pink: '#EC4899',
-          blue: '#3B82F6',
-          accent: '#A78BFA'
+          dark: '#FFFFFF',
+          purple: '#4C6ABD',
+          pink: '#4C6ABD',
+          blue: '#4C6ABD',
+          accent: '#4C6ABD'
         }
       },
       animation: {

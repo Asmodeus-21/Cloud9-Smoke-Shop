@@ -18,11 +18,11 @@ const GALLERY_IMAGES = [
 
 const Gallery: React.FC = () => {
   return (
-    <div className="pb-32 pt-24">
+    <div className="pb-32 pt-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-6xl font-black mb-6">Atmosphere</h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <h1 className="text-6xl font-black mb-6 text-near-black">Atmosphere</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Explore the visual identity of Cloud9. A world of premium vapor, precision hardware, and artisan glass work. No clones, no compromises.
           </p>
         </div>
@@ -31,7 +31,7 @@ const Gallery: React.FC = () => {
           {GALLERY_IMAGES.map((url, i) => (
             <div 
               key={i} 
-              className="glass p-3 rounded-[2.5rem] border-white/5 group overflow-hidden break-inside-avoid animate-in fade-in slide-in-from-bottom duration-700"
+              className="bg-white border border-brand-light p-3 rounded-[2.5rem] group overflow-hidden break-inside-avoid animate-in fade-in slide-in-from-bottom duration-700"
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="relative overflow-hidden rounded-[2rem]">

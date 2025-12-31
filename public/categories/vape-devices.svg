@@ -1,45 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
-  <!-- Background gradient -->
+﻿<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a0033;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4d0066;stop-opacity:1" />
+    <style>
+      @keyframes vaporRing { 0% { r: 8px; opacity: 0.8; } 100% { r: 35px; opacity: 0; } }
+      @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+      @keyframes pulse-glow { 0%, 100% { filter: drop-shadow(0 0 8px #4C6ABD) drop-shadow(0 0 16px rgba(76,106,189,0.6)); } 50% { filter: drop-shadow(0 0 12px #4C6ABD) drop-shadow(0 0 24px rgba(76,106,189,0.8)); } }
+      @keyframes wave { 0%, 100% { d: path('M 72 120 Q 85 118 100 120 Q 115 122 128 120'); } 50% { d: path('M 72 120 Q 85 125 100 120 Q 115 115 128 120'); } }
+      @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+      @keyframes scan-line { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+      @keyframes led-charge { 0%, 100% { width: 75%; } 50% { width: 92%; } }
+      @keyframes rotate3d { 0% { transform: rotateX(5deg) rotateY(-8deg) rotateZ(2deg); } 50% { transform: rotateX(-5deg) rotateY(8deg) rotateZ(-2deg); } 100% { transform: rotateX(5deg) rotateY(-8deg) rotateZ(2deg); } }
+      @keyframes tilt-left { 0%, 100% { transform: perspective(1200px) rotateX(0deg) rotateY(0deg); } 50% { transform: perspective(1200px) rotateX(2deg) rotateY(-12deg); } }
+      @keyframes depth-shift { 0%, 100% { filter: blur(0px); } 50% { filter: blur(0.5px); } }
+      .vape-device { animation: float 4s ease-in-out infinite, rotate3d 6s ease-in-out infinite; }
+      .glow-pulse { animation: pulse-glow 3s ease-in-out infinite; }
+    </style>
+    
+    <linearGradient id="metallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9f9f9;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#f0f0f0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e0e0e0;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#d0d0d0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b0b0b0;stop-opacity:1" />
     </linearGradient>
-    <radialGradient id="glow1" cx="50%" cy="30%" r="60%">
-      <stop offset="0%" style="stop-color:#ff1493;stop-opacity:0.4" />
-      <stop offset="100%" style="stop-color:#ff1493;stop-opacity:0" />
+    
+    <linearGradient id="liquidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5575c4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4C6ABD;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#2d3e7a;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <radialGradient id="glassShine" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="30%" style="stop-color:#ffffff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
     </radialGradient>
+    
+    <filter id="deepShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="8" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="innerGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+      <feColorMatrix type="saturate" values="1.3"/>
+    </filter>
+    
+    <filter id="3dShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7"/>
+      <feOffset dx="2" dy="10" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.4"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
-  <rect width="600" height="800" fill="url(#bgGrad1)"/>
-  <rect width="600" height="800" fill="url(#glow1)"/>
+  <circle cx="100" cy="110" r="100" fill="#4C6ABD" opacity="0.08" filter="url(#3dShadow)"/>
+  <circle cx="100" cy="120" r="85" fill="#4C6ABD" opacity="0.05" filter="url(#deepShadow)"/>
+  <circle cx="100" cy="105" r="70" fill="#4C6ABD" opacity="0.03"/>
   
-  <!-- Vape Device Illustration -->
-  <g transform="translate(300, 350)">
-    <!-- Device Body -->
-    <rect x="-40" y="-100" width="80" height="200" rx="20" fill="#0a0a2e" stroke="#ff1493" stroke-width="3"/>
+  <ellipse cx="100" cy="195" rx="55" ry="12" fill="#000000" opacity="0.15" filter="url(#deepShadow)"/>
+  
+  <g class="vape-device glow-pulse" filter="url(#3dShadow)" style="transform-style: preserve-3d;">
     
-    <!-- Liquid Chamber -->
-    <rect x="-30" y="-80" width="60" height="60" rx="8" fill="#1a1a4d" stroke="#8b5cf6" stroke-width="2"/>
-    <rect x="-25" y="-70" width="50" height="40" fill="#ff1493" opacity="0.6"/>
+    <path d="M 70 50 Q 65 60 65 80 L 65 160 Q 65 175 80 175 L 120 175 Q 135 175 135 160 L 135 80 Q 135 60 130 50 Z" 
+          fill="url(#metallic)" stroke="#c0c0c0" stroke-width="2" stroke-linejoin="round" style="filter: drop-shadow(-2px 2px 4px rgba(0,0,0,0.2)) drop-shadow(2px -2px 4px rgba(255,255,255,0.5));"/>
     
-    <!-- Display -->
-    <rect x="-35" y="-10" width="70" height="40" rx="5" fill="#000000" stroke="#00ff88" stroke-width="2"/>
-    <text x="0" y="10" font-size="16" fill="#00ff88" text-anchor="middle" font-weight="bold">92W</text>
+    <path d="M 68 55 L 68 165 Q 68 172 73 173" stroke="#909090" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M 132 55 L 132 165 Q 132 172 127 173" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.5"/>
     
-    <!-- Mouthpiece -->
-    <circle cx="0" cy="-120" r="18" fill="#1a1a2e" stroke="#ff1493" stroke-width="2"/>
-    <circle cx="0" cy="-120" r="10" fill="#4d0066"/>
+    <ellipse cx="100" cy="174" rx="32" ry="3" fill="#808080" opacity="0.4"/>
     
-    <!-- LED Indicators -->
-    <circle cx="-20" cy="60" r="6" fill="#ff1493"/>
-    <circle cx="0" cy="60" r="6" fill="#8b5cf6"/>
-    <circle cx="20" cy="60" r="6" fill="#00ff88"/>
+    <path d="M 72 52 Q 70 70 70 90 L 70 160 Q 72 170 78 172" 
+          fill="#ffffff" opacity="0.55" style="filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.1));"/>
+    
+    <defs>
+      <mask id="shimmerMask">
+        <path d="M 70 50 Q 65 60 65 80 L 65 160 Q 65 175 80 175 L 120 175 Q 135 175 135 160 L 135 80 Q 135 60 130 50 Z" fill="white"/>
+      </mask>
+    </defs>
+    <g mask="url(#shimmerMask)" opacity="0.5">
+      <rect x="58" y="50" width="24" height="130" fill="linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent)"
+            style="animation: shimmer 5s infinite linear;"/>
+    </g>
+    
+    <g style="filter: drop-shadow(0 4px 8px rgba(76,106,189,0.25));transform-style: preserve-3d;">
+      <rect x="76" y="65" width="48" height="42" rx="5" fill="#fafafa" stroke="#4C6ABD" stroke-width="2.5" opacity="0.97"/>
+      
+      <ellipse cx="84" cy="70" rx="9" ry="7" fill="url(#glassShine)" opacity="0.8"/>
+      <ellipse cx="116" cy="78" rx="6" ry="5" fill="#ffffff" opacity="0.4"/>
+      <path d="M 78 68 Q 82 64 88 66" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.6"/>
+      
+      <rect x="78" y="85" width="44" height="20" fill="url(#liquidGrad)" rx="2" style="filter: drop-shadow(inset 0 2px 4px rgba(0,0,0,0.2));"/>
+      
+      <path d="M 72 120 Q 85 118 100 120 Q 115 122 128 120" 
+            stroke="#4C6ABD" stroke-width="2" fill="none" opacity="0.8" 
+            style="animation: wave 2.5s ease-in-out infinite; filter: drop-shadow(0 2px 3px rgba(76,106,189,0.4));"/>
+      
+      <rect x="78" y="85" width="44" height="7" fill="#ffffff" opacity="0.35" rx="2" 
+            style="animation: shimmer 3s infinite linear;"/>
+    </g>
+    
+    <g filter="url(#innerGlow)" style="transform-style: preserve-3d; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3));box-shadow: inset 0 0 12px rgba(76,106,189,0.15);">
+      <rect x="72" y="118" width="56" height="38" rx="4" 
+            fill="#0d0d15" stroke="#4C6ABD" stroke-width="2.5" opacity="0.97"/>
+      
+      <rect x="74" y="120" width="52" height="34" rx="3" fill="#000000" opacity="0.3"/>
+      
+      <g opacity="0.2" stroke="#4C6ABD" stroke-width="0.6">
+        <line x1="80" y1="122" x2="120" y2="122"/>
+        <line x1="80" y1="128" x2="120" y2="128"/>
+        <line x1="80" y1="134" x2="120" y2="134"/>
+        <line x1="80" y1="140" x2="120" y2="140"/>
+        <line x1="80" y1="146" x2="120" y2="146"/>
+      </g>
+      
+      <g opacity="0.4" style="animation: scan-line 4s linear infinite;">
+        <rect x="72" y="120" width="56" height="1.5" fill="#4C6ABD"/>
+      </g>
+      
+      <text x="100" y="138" font-family="'Arial', sans-serif" font-size="13" font-weight="900" 
+            fill="#4C6ABD" text-anchor="middle" opacity="1" 
+            style="filter: drop-shadow(0 0 8px #4C6ABD) drop-shadow(0 0 4px rgba(76,106,189,0.8)); text-shadow: 0 0 6px rgba(76,106,189,0.6);">92W</text>
+      
+      <rect x="76" y="145" width="48" height="3.5" rx="2" fill="#1a1a20" stroke="#4C6ABD" stroke-width="1" opacity="0.85"/>
+      <rect x="76" y="145" width="36" height="3.5" rx="2" fill="url(#liquidGrad)" opacity="0.95"
+            style="animation: led-charge 2s ease-in-out infinite; filter: drop-shadow(0 0 6px #4C6ABD) drop-shadow(0 0 2px rgba(76,106,189,0.8));"/>
+    </g>
+    
+    <g filter="url(#deepShadow)" style="transform-style: preserve-3d;">
+      <circle cx="100" cy="48" r="13.5" fill="url(#metallic)" stroke="#a8a8a8" stroke-width="2" style="filter: drop-shadow(-1px 1px 3px rgba(0,0,0,0.2)) drop-shadow(1px -1px 3px rgba(255,255,255,0.4));"/>
+      
+      <circle cx="100" cy="48" r="13.5" fill="url(#glassShine)" opacity="0.6"/>
+      
+      <circle cx="100" cy="48" r="8.5" fill="#1a1a1a" stroke="#4C6ABD" stroke-width="1.5" opacity="0.9" style="filter: drop-shadow(inset 0 2px 4px rgba(0,0,0,0.5));"/>
+      
+      <circle cx="97" cy="45" r="2.5" fill="#ffffff" opacity="0.7"/>
+      <circle cx="103" cy="51" r="1.5" fill="#ffffff" opacity="0.4"/>
+    </g>
+    
+    <g opacity="0.85">
+      <circle cx="82" cy="172" r="4" fill="#4C6ABD" opacity="0.8" style="filter: drop-shadow(0 0 8px #4C6ABD) drop-shadow(0 2px 4px rgba(0,0,0,0.3));"/>
+      <circle cx="100" cy="172" r="4" fill="#4C6ABD" opacity="0.55" style="filter: drop-shadow(0 0 6px #4C6ABD) drop-shadow(0 2px 3px rgba(0,0,0,0.2));"/>
+      <circle cx="118" cy="172" r="4" fill="#4C6ABD" opacity="0.3"/>
+    </g>
   </g>
   
-  <!-- Label -->
-  <text x="300" y="600" font-size="48" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="2">
-    VAPE DEVICES
-  </text>
-  <line x1="150" y1="630" x2="450" y2="630" stroke="#ff1493" stroke-width="3"/>
+  <g opacity="0.65" pointer-events="none">
+    <circle cx="100" cy="45" r="8" fill="none" stroke="#4C6ABD" stroke-width="2" 
+            style="animation: vaporRing 0.8s infinite linear; animation-delay: 0s; filter: drop-shadow(0 0 4px #4C6ABD);" opacity="0.9"/>
+    <circle cx="100" cy="45" r="8" fill="none" stroke="#4C6ABD" stroke-width="1.5" 
+            style="animation: vaporRing 0.8s infinite linear; animation-delay: 0.16s; filter: drop-shadow(0 0 3px #4C6ABD);" opacity="0.65"/>
+    <circle cx="100" cy="45" r="8" fill="none" stroke="#4C6ABD" stroke-width="1" 
+            style="animation: vaporRing 0.8s infinite linear; animation-delay: 0.32s;" opacity="0.4"/>
+    <circle cx="100" cy="45" r="8" fill="none" stroke="#4C6ABD" stroke-width="0.8" 
+            style="animation: vaporRing 0.8s infinite linear; animation-delay: 0.48s;" opacity="0.2"/>
+  </g>
+  
+  <g opacity="0.2" pointer-events="none">
+    <circle cx="100" cy="40" r="50" fill="#4C6ABD" style="filter: blur(25px);"/>
+    <circle cx="100" cy="35" r="40" fill="#4C6ABD" style="filter: blur(35px); opacity: 0.5;"/>
+  </g>
 </svg>

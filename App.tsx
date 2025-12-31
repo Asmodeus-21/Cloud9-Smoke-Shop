@@ -41,14 +41,14 @@ const App: React.FC = () => {
 
   if (isVerified === null) {
     return (
-      <div className="min-h-screen flex flex-col font-sans bg-premium-dark selection:bg-premium-purple selection:text-white relative">
+      <div className="min-h-screen flex flex-col font-sans bg-white selection:bg-brand-blue selection:text-white relative">
         <AgeGate onVerify={handleVerify} onReject={handleReject} />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-premium-dark selection:bg-premium-purple selection:text-white relative">
+    <div className="min-h-screen flex flex-col font-sans bg-white selection:bg-brand-blue selection:text-white relative">
       {isVerified === false ? (
         <AgeGate onVerify={handleVerify} onReject={handleReject} />
       ) : (

@@ -2,23 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary-blue: #4C6ABD;
+  --color-white: #FFFFFF;
+  --color-near-black: #090A0B;
+  --color-light-gray: #F5F5F5;
+  --color-border: #E5E5E5;
+  --color-text: #090A0B;
+  --color-text-secondary: #666666;
+  --color-text-light: #999999;
+}
+
 @layer components {
   body {
-    @apply bg-premium-dark text-white overflow-x-hidden;
+    @apply bg-white overflow-x-hidden;
+    color: var(--color-text);
   }
 
   .glass {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+    @apply bg-white border border-[#E5E5E5];
   }
 
   .neon-text {
-    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5), 0 0 20px rgba(236, 72, 153, 0.3);
+    color: var(--color-primary-blue);
   }
 
   .smoke-wisp {
     @apply fixed pointer-events-none z-[1] rounded-full;
     filter: blur(40px);
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(139, 92, 246, 0.05) 50%, transparent 100%);
+    background: radial-gradient(circle, rgba(76, 106, 189, 0.05) 0%, rgba(76, 106, 189, 0.02) 50%, transparent 100%);
   }
 }
 
@@ -28,42 +40,31 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-premium-dark;
+    @apply bg-gray-100;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-600 rounded;
+    @apply bg-gray-300 rounded;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-500;
+    @apply bg-gray-400;
   }
-}
 
-/* Custom animations keyframes */
-@keyframes glow {
-  0%, 100% {
-    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  /* Utility classes for the new theme */
+  .bg-brand-primary {
+    background-color: var(--color-primary-blue);
   }
-  50% {
-    text-shadow: 0 0 20px rgba(236, 72, 153, 0.8);
-  }
-}
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
+  .text-brand-primary {
+    color: var(--color-primary-blue);
   }
-  50% {
-    transform: translateY(-20px);
-  }
-}
 
-@keyframes vapor {
-  0% {
-    background-position: 0% 50%;
+  .border-brand-light {
+    border-color: var(--color-border);
   }
-  100% {
-    background-position: 100% 50%;
+
+  .text-brand-secondary {
+    color: var(--color-text-secondary);
   }
 }

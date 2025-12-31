@@ -55,8 +55,8 @@ const ChatBubble: React.FC = () => {
   return (
     <div className="fixed bottom-6 right-6 z-[100]">
       {isOpen && (
-        <div className="glass rounded-3xl w-[350px] sm:w-[400px] h-[500px] mb-4 border-white/10 flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
-          <div className="p-4 bg-gradient-to-r from-premium-purple to-premium-pink flex items-center justify-between">
+        <div className="bg-white rounded-3xl w-[350px] sm:w-[400px] h-[500px] mb-4 border border-brand-light flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+          <div className="p-4 bg-gradient-to-r from-brand-blue to-brand-blue flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
                 <span className="text-white text-xs font-bold">C9</span>
@@ -81,8 +81,8 @@ const ChatBubble: React.FC = () => {
               <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${
                   msg.role === 'user' 
-                    ? 'bg-premium-purple text-white rounded-tr-none' 
-                    : 'glass bg-white/10 text-gray-200 rounded-tl-none border-white/10'
+                    ? 'bg-brand-blue text-white rounded-tr-none' 
+                    : 'bg-gray-100 text-gray-700 rounded-tl-none border-brand-light'
                 }`}>
                   {msg.text}
                 </div>
@@ -90,7 +90,7 @@ const ChatBubble: React.FC = () => {
             ))}
             {isLoading && (
               <div className="flex justify-start">
-                <div className="glass bg-white/10 p-3 rounded-2xl rounded-tl-none border-white/10">
+                <div className="bg-gray-100 p-3 rounded-2xl rounded-tl-none border border-brand-light">
                   <div className="flex gap-1">
                     <div className="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce"></div>
                     <div className="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce delay-100"></div>
@@ -101,7 +101,7 @@ const ChatBubble: React.FC = () => {
             )}
           </div>
 
-          <div className="p-4 border-t border-white/5 bg-black/20">
+          <div className="p-4 border-t border-brand-light bg-gray-50">
             <div className="flex gap-2">
               <input
                 type="text"
@@ -109,12 +109,12 @@ const ChatBubble: React.FC = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSend()}
                 placeholder="Ask about products, hours..."
-                className="flex-grow bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-premium-purple"
+                className="flex-grow bg-white border border-brand-light rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-brand-blue"
               />
               <button 
                 onClick={handleSend}
                 disabled={isLoading}
-                className="w-10 h-10 bg-premium-purple rounded-xl flex items-center justify-center transition-all hover:scale-105 active:scale-95 disabled:opacity-50"
+                className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center transition-all hover:scale-105 active:scale-95 disabled:opacity-50"
               >
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -127,9 +127,9 @@ const ChatBubble: React.FC = () => {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 rounded-full bg-gradient-to-br from-premium-purple to-premium-pink shadow-2xl flex items-center justify-center transition-all hover:scale-110 active:scale-90 group relative"
+        className="w-16 h-16 rounded-full bg-gradient-to-br from-brand-blue to-brand-blue shadow-2xl flex items-center justify-center transition-all hover:scale-110 active:scale-90 group relative"
       >
-        <div className="absolute -top-2 -right-2 w-6 h-6 bg-white text-premium-purple text-[10px] font-bold rounded-full flex items-center justify-center shadow-lg border-2 border-premium-purple">
+        <div className="absolute -top-2 -right-2 w-6 h-6 bg-white text-brand-blue text-[10px] font-bold rounded-full flex items-center justify-center shadow-lg border-2 border-brand-blue">
           AI
         </div>
         <svg className="w-8 h-8 text-white transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -31,7 +31,7 @@ const SmokeEffect: React.FC = () => {
             animationDuration: `${wisp.duration}s`,
             animationDelay: `${wisp.delay}s`,
             opacity: wisp.opacity,
-            background: 'radial-gradient(circle, rgba(255,255,255,0.25) 0%, rgba(236, 72, 153, 0.1) 40%, transparent 80%)',
+            background: 'radial-gradient(circle, rgba(255,255,255,0.25) 0%, rgba(76, 106, 189, 0.05) 40%, transparent 80%)',
             filter: 'blur(70px)'
           }}
         />
@@ -62,13 +62,13 @@ const InteractiveVapor: React.FC = () => {
 
   return (
     <>
-      {/* Cursor Glow - Pink Tinted */}
+      {/* Cursor Glow - Blue Tinted */}
       <div 
         className="fixed rounded-full pointer-events-none transition-all duration-700 ease-out"
         style={{
           width: '700px',
           height: '700px',
-          background: 'radial-gradient(circle, rgba(236, 72, 153, 0.18) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(76, 106, 189, 0.08) 0%, transparent 70%)',
           left: pos.x - 350,
           top: pos.y - 350,
           filter: 'blur(90px)',
@@ -80,7 +80,7 @@ const InteractiveVapor: React.FC = () => {
         className="fixed inset-0 pointer-events-none transition-transform duration-1000 ease-out opacity-25"
         style={{
           transform: `translateY(${-scrollVapor}px)`,
-          background: 'linear-gradient(to bottom, transparent, rgba(236, 72, 153, 0.05), transparent)',
+          background: 'linear-gradient(to bottom, transparent, rgba(76, 106, 189, 0.02), transparent)',
           zIndex: 1
         }}
       />

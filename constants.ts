@@ -8,7 +8,10 @@ export const BUSINESS_INFO = {
   email: "hello@cloud9ukiah.com",
   hours: {
     weekdays: "9:00 AM - 10:00 PM",
-    weekends: "10:00 AM - 11:00 PM"
+    weekends: "9:00 AM - 11:00 PM",
+    monday_thursday: "9:00 AM - 10:00 PM",
+    friday_saturday: "9:00 AM - 11:00 PM",
+    sunday: "9:00 AM - 8:00 PM"
   }
 };
 
@@ -24,53 +27,53 @@ export const NAV_ITEMS: NavItem[] = [
 export const PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Geek Bar Pulse 15000',
-    category: 'Disposables',
-    price: 24.99,
-    description: 'The world\'s first full-screen disposable vape. Dual power modes and consistent flavor.',
+    name: 'Geek Bar Pulse X 25000 – Clear (No Flavor)',
+    category: 'Devices & Vape',
+    price: 31.99,
+    description: 'No flavor. Non-flavor product. Premium clear disposable device with advanced technology.',
     image: 'https://images.unsplash.com/photo-1550418406-930438138982?q=80&w=800&h=800&auto=format&fit=crop',
     featured: true
   },
   {
     id: '2',
-    name: 'Lost Mary MO5000',
-    category: 'Disposables',
-    price: 19.99,
-    description: 'Elegant design with advanced mesh coil technology for smooth vapor production.',
+    name: 'Puffco Pivot Device',
+    category: 'Devices & Vape',
+    price: 144.99,
+    description: 'Premium portable dab device with advanced heating technology and precise temperature control',
     image: 'https://images.unsplash.com/photo-1527018601619-a508a2be00cd?q=80&w=800&h=800&auto=format&fit=crop',
     featured: true
   },
   {
     id: '3',
-    name: 'Premium Glass Water Pipe',
+    name: 'Straight Tube Bong',
     category: 'Glass',
-    price: 89.99,
-    description: 'Hand-blown 12-inch borosilicate glass with tree percolator.',
+    price: 79.99,
+    description: 'Classic glass water pipe with 8mm thickness. Straight tube design for water filtration.',
     image: 'https://images.unsplash.com/photo-1610444697397-6c8411b43521?q=80&w=800&h=800&auto=format&fit=crop',
     featured: true
   },
   {
     id: '4',
-    name: 'Naked 100 - Lava Flow',
-    category: 'Juices',
-    price: 18.99,
-    description: 'A delicious tropical blend of fresh strawberries, coconut, and pineapple.',
+    name: 'Mini Dab Rig',
+    category: 'Dab & Concentrate',
+    price: 39.99,
+    description: 'Compact glass dab rig perfect for concentrate use.',
     image: 'https://images.unsplash.com/photo-1594918715878-1b2d7f87a8e7?q=80&w=800&h=800&auto=format&fit=crop'
   },
   {
     id: '5',
-    name: 'Smok Nord 5 Kit',
-    category: 'Vapes',
-    price: 45.99,
-    description: 'Adjustable airflow and wattage with a powerful 2000mAh battery.',
+    name: 'Santa Cruz Shredder',
+    category: 'Rolling',
+    price: 17.99,
+    description: 'Premium 4-piece herb grinder with precision engineering.',
     image: 'https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=800&h=800&auto=format&fit=crop'
   },
   {
     id: '6',
-    name: 'Electric Herb Grinder',
-    category: 'Accessories',
-    price: 34.99,
-    description: 'High-torque motor for consistent grind every time. USB-C rechargeable.',
+    name: 'RAW Cones Classic',
+    category: 'Rolling',
+    price: 2.99,
+    description: 'Pre-rolled cone papers ready to fill. Classic unbleached material.',
     image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&h=800&auto=format&fit=crop'
   },
 ];
