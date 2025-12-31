@@ -14,7 +14,7 @@
       "name": "UT Bar Clear – No Flavor",
       "category": "Devices & Vape",
       "price": 29.99,
-      "description": "Non-flavor clear product. Premium quality disposable device designed for pure, flavor-free performance.",
+      "description": "No flavor. Non-flavor product. Premium quality disposable device designed for pure, flavor-free performance.",
       "image": "ut-bar-clear-no-flavor.jpeg"
     },
     {
@@ -22,7 +22,7 @@
       "name": "Puffco Pivot Device",
       "category": "Devices & Vape",
       "price": 144.99,
-      "description": "Premium portable dab device with advanced heating technology and precise temperature control",
+      "description": "Premium portable dab device with advanced heating technology and precise temperature control.",
       "image": "puffco-pivot-device.jpeg",
       "featured": true
     },
@@ -35,19 +35,11 @@
       "image": "juul-virginia-tobacco-pods.png"
     },
     {
-      "id": "puffco-plus",
-      "name": "Puffco Plus Pen",
-      "category": "Devices & Vape",
-      "price": 79.99,
-      "description": "Portable dab pen with precision temperature control",
-      "image": "puffco-plus-pen.jpeg"
-    },
-    {
       "id": "straight-tube-bong",
       "name": "Straight Tube Bong",
       "category": "Glass",
       "price": 79.99,
-      "description": "Classic glass water pipe with 8mm thickness. Straight tube design - NOT beaker.",
+      "description": "Classic glass water pipe with 8mm thickness. Straight tube design for optimal performance.",
       "image": "straight-tube-bong.jpg",
       "featured": true
     },
@@ -374,7 +366,7 @@
       "name": "Smell-Proof Backpack",
       "category": "Lifestyle & Storage",
       "price": 79.99,
-      "description": "Odor-resistant storage backpack with locking zippers",
+      "description": "Premium odor-resistant storage backpack with locking zippers and durable construction",
       "image": "smell-proof-backpack.jpeg"
     },
     {

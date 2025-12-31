@@ -7,11 +7,9 @@ export const BUSINESS_INFO = {
   phone: "707-367-2896",
   email: "hello@cloud9ukiah.com",
   hours: {
-    weekdays: "9:00 AM - 10:00 PM",
-    weekends: "9:00 AM - 11:00 PM",
-    monday_thursday: "9:00 AM - 10:00 PM",
-    friday_saturday: "9:00 AM - 11:00 PM",
-    sunday: "9:00 AM - 8:00 PM"
+    monday_thursday: "9:00 AM – 10:00 PM",
+    friday_saturday: "9:00 AM – 11:00 PM",
+    sunday: "9:00 AM – 8:00 PM"
   }
 };
 
