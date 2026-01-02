@@ -44,14 +44,6 @@
       "featured": true
     },
     {
-      "id": "beaker-bong",
-      "name": "Beaker Bong",
-      "category": "Glass",
-      "price": 89.99,
-      "description": "Premium beaker-base water pipe for enhanced stability and water capacity",
-      "image": "beaker-bong.jpg"
-    },
-    {
       "id": "spoon-pipe",
       "name": "Spoon Pipe - Colored",
       "category": "Glass",
@@ -311,7 +303,7 @@
       "category": "Rolling",
       "price": 10.99,
       "description": "Non-tobacco leaf wraps. 5-pack.",
-      "image": "backwoods-honey-berry.jpeg"
+      "image": "backwoods-honey-berry.jpg"
     },
     {
       "id": "santa-cruz-shredder",
@@ -335,7 +327,7 @@
       "category": "Accessories",
       "price": 2.99,
       "description": "Refillable gas lighter with flint wheel",
-      "image": "clipper-lighter-solid.jpeg"
+      "image": "ClipperMetalLighterwithBox.jpg"
     },
     {
       "id": "510-battery",
@@ -367,7 +359,7 @@
       "category": "Lifestyle & Storage",
       "price": 79.99,
       "description": "Premium odor-resistant storage backpack with locking zippers and durable construction",
-      "image": "smell-proof-backpack.jpeg"
+      "image": "smell-proof-backpack.jpg"
     },
     {
       "id": "detoxify-clean",
