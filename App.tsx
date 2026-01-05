@@ -62,13 +62,30 @@ const App: React.FC = () => {
       {isVerified === false ? (
         <AgeGate onVerify={handleVerify} onReject={handleReject} />
       ) : (
-        <>
-          <h1 style={{ padding: '20px' }}>Cloud9 Smoke Shop</h1>
-          <p style={{ padding: '20px' }}>Welcome! Site is loading...</p>
-          <button onClick={() => setIsVerified(false)} style={{ padding: '10px 20px', margin: '20px' }}>
-            Reset Age Verification
-          </button>
-        </>
+        <CartProvider>
+          <>
+            {/* Background Vapor Effects */}
+            <SmokeEffect />
+            
+            <div className="relative z-10 flex flex-col min-h-screen">
+              <Navbar />
+              
+              <main className="flex-grow">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/shop" element={<Shop />} />
+                  <Route path="/gallery" element={<Gallery />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/policies" element={<Policies />} />
+                </Routes>
+              </main>
+
+              <Footer />
+              <ChatBubble />
+            </div>
+          </>
+        </CartProvider>
       )}
     </div>
   );
