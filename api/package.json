@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "stripe": "^14.15.0",
+    "@supabase/supabase-js": "^2.41.1",
+    "@vercel/node": "^3.0.0"
+  }
+}
