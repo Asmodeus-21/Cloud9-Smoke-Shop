@@ -19,6 +19,15 @@ const App: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // For development, automatically verify on load
+    // Comment out this line to enable age gate
+    const isDev = !import.meta.env.PROD;
+    if (isDev) {
+      sessionStorage.setItem('age-verified', 'true');
+      setIsVerified(true);
+      return;
+    }
+    
     const verified = sessionStorage.getItem('age-verified');
     if (verified === 'true') {
       setIsVerified(true);
