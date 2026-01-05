@@ -1,12 +1,22 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
 
-const supabase = createClient(
-  process.env.SUPABASE_URL!,
-  process.env.SUPABASE_ANON_KEY!
-);
+// Check if Supabase is configured
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+const supabase = SUPABASE_URL && SUPABASE_ANON_KEY 
+  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  : null;
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  // Return error if Supabase is not configured
+  if (!supabase) {
+    return res.status(503).json({
+      error: 'Database service is not yet configured',
+      message: 'Supabase credentials are not set. Please configure them in Vercel environment variables.'
+    });
+  }
+
   // GET /api/orders/:sessionId - Fetch order by session ID
   if (req.method === 'GET') {
     const { sessionId } = req.query;
