@@ -1,14 +1,25 @@
 import Stripe from 'stripe';
 import { VercelRequest, VercelResponse } from '@vercel/node';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+// Check if Stripe is configured
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
+const stripe = STRIPE_SECRET_KEY ? new Stripe(STRIPE_SECRET_KEY, {
   apiVersion: '2023-10-16',
-});
+}) : null;
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return res.status(405).end('Method Not Allowed');
+  }
+
+  // Return error if Stripe is not configured
+  if (!stripe || !STRIPE_SECRET_KEY) {
+    return res.status(503).json({
+      error: 'Payment service is not yet configured',
+      message: 'Stripe API key is not set. Please configure it later.',
+      status: 'unavailable'
+    });
   }
 
   try {
