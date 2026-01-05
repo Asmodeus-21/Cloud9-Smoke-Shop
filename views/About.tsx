@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-brand-blue/10 to-white">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-blue/5 to-white z-10"></div>
         <img 
-          src="/About%20page/c9shop-about.png" 
+          src="/about-page/c9shop-about.jpg" 
           className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale"
           alt="Cloud9 Atmosphere"
         />
@@ -50,7 +50,7 @@ const About: React.FC = () => {
               <div className="absolute -inset-4 bg-gradient-to-tr from-brand-blue to-brand-blue blur-3xl opacity-10"></div>
               <div className="bg-white border border-brand-light p-4 rounded-[3rem] relative z-10 overflow-hidden">
                 <img 
-                  src="/products/rolling/santa-cruz-shredder.jpg" 
+                  src="/about-page/c9shop-about.jpg" 
                   className="rounded-[2.5rem] w-full object-cover aspect-[4/5] transform hover:scale-105 transition-transform duration-700"
                   alt="Premium Hardware Close-up"
                 />

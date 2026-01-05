@@ -2,10 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { NAV_ITEMS, BUSINESS_INFO } from '../constants';
+import { useCart } from '../src/hooks/useCart';
+import { CartSidebar } from './Cart/CartSidebar';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+  const { item_count } = useCart();
   const location = useLocation();
 
   useEffect(() => {
@@ -49,17 +53,45 @@ const Navbar: React.FC = () => {
               >
                 Shop Now
               </Link>
+              <button
+                onClick={() => setCartOpen(true)}
+                className="relative p-2 text-brand-blue hover:bg-gray-100 rounded-lg transition-all"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 10m10 0h2m-2 0a1 1 0 11-2 0m2 0a1 1 0 11-2 0m8-5a1 1 0 11-2 0m2 0a1 1 0 11-2 0" />
+                </svg>
+                {item_count > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                    {item_count}
+                  </span>
+                )}
+              </button>
             </div>
 
             {/* Mobile Toggle */}
-            <button 
-              className="md:hidden text-brand-blue"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
-              </svg>
-            </button>
+            <div className="md:hidden flex items-center gap-3">
+              <button
+                onClick={() => setCartOpen(true)}
+                className="relative p-2 text-brand-blue hover:bg-gray-100 rounded-lg transition-all"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 10m10 0h2m-2 0a1 1 0 11-2 0m2 0a1 1 0 11-2 0m8-5a1 1 0 11-2 0m2 0a1 1 0 11-2 0" />
+                </svg>
+                {item_count > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                    {item_count}
+                  </span>
+                )}
+              </button>
+              <button 
+                className="text-brand-blue"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -87,6 +119,9 @@ const Navbar: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Cart Sidebar */}
+      <CartSidebar isOpen={cartOpen} onClose={() => setCartOpen(false)} />
     </nav>
   );
 };

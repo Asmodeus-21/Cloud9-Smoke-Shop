@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { CartProvider } from './src/context/CartContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AgeGate from './components/AgeGate';
@@ -52,28 +53,30 @@ const App: React.FC = () => {
       {isVerified === false ? (
         <AgeGate onVerify={handleVerify} onReject={handleReject} />
       ) : (
-        <>
-          {/* Background Vapor Effects */}
-          <SmokeEffect />
-          
-          <div className="relative z-10 flex flex-col min-h-screen">
-            <Navbar />
+        <CartProvider>
+          <>
+            {/* Background Vapor Effects */}
+            <SmokeEffect />
             
-            <main className="flex-grow">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/policies" element={<Policies />} />
-              </Routes>
-            </main>
+            <div className="relative z-10 flex flex-col min-h-screen">
+              <Navbar />
+              
+              <main className="flex-grow">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/shop" element={<Shop />} />
+                  <Route path="/gallery" element={<Gallery />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/policies" element={<Policies />} />
+                </Routes>
+              </main>
 
-            <Footer />
-            <ChatBubble />
-          </div>
-        </>
+              <Footer />
+              <ChatBubble />
+            </div>
+          </>
+        </CartProvider>
       )}
     </div>
   );

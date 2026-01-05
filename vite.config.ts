@@ -10,8 +10,11 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
         hmr: {
           host: 'localhost',
-          port: 3000,
+          protocol: 'ws'
         }
+      },
+      build: {
+        target: ['es2020', 'edge90', 'firefox90', 'chrome90', 'safari14']
       },
       plugins: [react()],
       define: {

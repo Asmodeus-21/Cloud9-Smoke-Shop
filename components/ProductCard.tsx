@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Product } from '../types';
 import { getProductImage } from '@/src/utils/imageHelper';
+import { useCart } from '@/src/hooks/useCart';
 
 interface ProductCardProps {
   product: Product;
@@ -9,6 +10,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [imageError, setImageError] = useState(false);
+  const { addItem } = useCart();
   const imageUrl = getProductImage(product.category, product.image);
   const displayImage = imageError ? getProductImage('', '') : imageUrl;
 
@@ -43,7 +45,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {product.description}
         </p>
         
-        <button className="w-full py-3 bg-brand-blue/5 hover:bg-brand-blue/10 border border-brand-light rounded-xl text-brand-blue font-semibold transition-all flex items-center justify-center gap-2 group/btn">
+        <button className="w-full py-3 bg-brand-blue/5 hover:bg-brand-blue/10 border border-brand-light rounded-xl text-brand-blue font-semibold transition-all flex items-center justify-center gap-2 group/btn" onClick={() => addItem({ product_id: product.id, name: product.name, price: product.price, quantity: 1, image: getProductImage(product.category, product.image), sku: product.sku })}>
           Add to Cart
           <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
