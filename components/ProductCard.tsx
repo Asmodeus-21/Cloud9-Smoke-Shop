@@ -10,9 +10,26 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [imageError, setImageError] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
   const { addItem } = useCart();
   const imageUrl = getProductImage(product.category, product.image);
   const displayImage = imageError ? getProductImage('', '') : imageUrl;
+
+  React.useEffect(() => {
+    setIsTouchDevice(() => {
+      return (
+        typeof window !== 'undefined' &&
+        ('ontouchstart' in window ||
+          navigator.maxTouchPoints > 0 ||
+          (navigator as any).msMaxTouchPoints > 0)
+      );
+    });
+  }, []);
+
+  const handleQuickView = () => {
+    // TODO: Implement modal to show product details
+    console.log('Quick view:', product);
+  };
 
   return (
     <div className="glass group rounded-3xl overflow-hidden border-brand-light transition-all duration-500 hover:border-brand-blue/30 hover:-translate-y-2 bg-white">
@@ -23,8 +40,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           onError={() => setImageError(true)}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-          <button className="w-full py-3 bg-brand-blue text-white font-bold rounded-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+        {/* Quick View - visible on touch devices, hidden on hover on desktop */}
+        <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 transition-opacity duration-500 ${
+          isTouchDevice ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+        }`}>
+          <button 
+            onClick={handleQuickView}
+            className="w-full py-3 bg-brand-blue text-white font-bold rounded-xl transform transition-transform duration-500 active:scale-95"
+          >
             Quick View
           </button>
         </div>

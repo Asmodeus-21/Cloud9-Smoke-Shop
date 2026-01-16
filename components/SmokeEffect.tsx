@@ -3,10 +3,31 @@ import React, { useEffect, useState, useRef } from 'react';
 
 const SmokeEffect: React.FC = () => {
   const [wisps, setWisps] = useState<{ id: number; x: number; y: number; size: number; duration: number; delay: number; opacity: number }[]>([]);
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   useEffect(() => {
+    // Detect mobile device
+    const isMobile = () => {
+      return (
+        typeof window !== 'undefined' &&
+        ('ontouchstart' in window ||
+          navigator.maxTouchPoints > 0 ||
+          (navigator as any).msMaxTouchPoints > 0 ||
+          window.matchMedia('(max-width: 768px)').matches)
+      );
+    };
+
+    // Check for prefers-reduced-motion
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    setIsMobileDevice(isMobile());
+    setPrefersReducedMotion(prefersReduced);
+
     // Generate thick, luxurious vapor clouds with a subtle pink tint
-    const initialWisps = Array.from({ length: 14 }).map((_, i) => ({
+    // Reduce wisps on mobile for better performance
+    const wispCount = isMobile() || prefersReduced ? 3 : 14;
+    const initialWisps = Array.from({ length: wispCount }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -17,6 +38,15 @@ const SmokeEffect: React.FC = () => {
     }));
     setWisps(initialWisps);
   }, []);
+
+  // Don't render interactive vapor on mobile for performance
+  if (prefersReducedMotion) {
+    return (
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-[1]">
+        {/* Static minimal vapor for reduced motion */}
+      </div>
+    );
+  }
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-[1]">
@@ -36,7 +66,7 @@ const SmokeEffect: React.FC = () => {
           }}
         />
       ))}
-      <InteractiveVapor />
+      {!isMobileDevice && <InteractiveVapor />}
     </div>
   );
 };

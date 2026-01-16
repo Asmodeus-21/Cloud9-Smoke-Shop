@@ -33,7 +33,7 @@ const Shop: React.FC = () => {
       <section className="pt-24 pb-12 bg-white border-b border-brand-light">
         <div className="container mx-auto px-6">
           <h1 className="text-5xl font-black mb-6 text-near-black">Store</h1>
-          <div className="flex overflow-x-auto pb-4 gap-4 scrollbar-hide">
+          <div className="flex overflow-x-auto pb-4 gap-4 scrollbar-hide webkit-scroll-touch">
             {CATEGORIES.map(cat => (
               <button
                 key={cat}
