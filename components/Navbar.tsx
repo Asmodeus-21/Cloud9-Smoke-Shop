@@ -21,15 +21,15 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-3' : 'py-6'}`}>
-      <div className="container mx-auto px-6">
-        <div className={`glass rounded-3xl transition-all duration-500 ${isScrolled ? 'shadow-lg border-brand-light px-8 py-3 bg-white' : 'px-10 py-4 border-brand-light bg-white'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'py-2 md:py-3' : 'py-3 md:py-6'}`}>
+      <div className="container mx-auto px-4 md:px-6">
+        <div className={`glass rounded-3xl transition-all duration-500 ${isScrolled ? 'shadow-lg border-brand-light px-4 md:px-8 py-2 md:py-3 bg-white' : 'px-4 md:px-10 py-3 md:py-4 border-brand-light bg-white'}`}>
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-blue flex items-center justify-center transition-transform group-hover:rotate-12">
-                <span className="text-white font-black text-xl">C9</span>
+            <Link to="/" className="flex items-center gap-2 md:gap-3 group flex-shrink-0">
+              <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg md:rounded-xl bg-gradient-to-br from-brand-blue to-brand-blue flex items-center justify-center transition-transform group-hover:rotate-12 flex-shrink-0">
+                <span className="text-white font-black text-sm md:text-xl">C9</span>
               </div>
-              <span className="text-2xl font-bold tracking-tight text-brand-blue group-hover:text-brand-blue transition-colors">
+              <span className="text-lg md:text-2xl font-bold tracking-tight text-brand-blue group-hover:text-brand-blue transition-colors whitespace-nowrap">
                 Cloud9
               </span>
             </Link>
@@ -55,9 +55,9 @@ const Navbar: React.FC = () => {
               </Link>
               <button
                 onClick={() => setCartOpen(true)}
-                className="relative p-2 text-brand-blue hover:bg-gray-100 rounded-lg transition-all"
+                className="relative p-2 text-brand-blue hover:bg-gray-100 rounded-lg transition-all flex-shrink-0"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 md:w-6 h-5 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 10m10 0h2m-2 0a1 1 0 11-2 0m2 0a1 1 0 11-2 0m8-5a1 1 0 11-2 0m2 0a1 1 0 11-2 0" />
                 </svg>
                 {item_count > 0 && (
@@ -69,12 +69,12 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Toggle */}
-            <div className="md:hidden flex items-center gap-3">
+            <div className="md:hidden flex items-center gap-2">
               <button
                 onClick={() => setCartOpen(true)}
-                className="relative p-2 text-brand-blue hover:bg-gray-100 rounded-lg transition-all"
+                className="relative p-2 text-brand-blue hover:bg-gray-100 rounded-lg transition-all flex-shrink-0"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 10m10 0h2m-2 0a1 1 0 11-2 0m2 0a1 1 0 11-2 0m8-5a1 1 0 11-2 0m2 0a1 1 0 11-2 0" />
                 </svg>
                 {item_count > 0 && (
@@ -84,10 +84,10 @@ const Navbar: React.FC = () => {
                 )}
               </button>
               <button 
-                className="text-brand-blue"
+                className="text-brand-blue flex-shrink-0"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
                 </svg>
               </button>
